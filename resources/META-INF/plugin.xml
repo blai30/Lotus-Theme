@@ -1,0 +1,48 @@
+<idea-plugin>
+  <id>com.blai30.lotus</id>
+  <name>Lotus Theme</name>
+  <vendor url="http://www.bhlai.com">blai30</vendor>
+
+  <description><![CDATA[
+    <h1>Lotus Theme Plugin</h1>
+    <h2>A theme pack with pastel font colors for the JetBrains platform.</h2>
+    <hr />
+
+    Includes a dark theme and light theme.
+    <ul>
+        <li>Lotus Dark</li>
+        <li>Lotus Light</li>
+    </ul>
+    <hr />
+
+    <p>Visit the plugin page to view screenshots</p>
+    <br />
+
+    <h3>This plugin depends on Rainbow Brackets.</h3>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+  <depends>izhangzhihao.rainbow.brackets</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <themeProvider id="c3f84cf4-72fb-49ac-bd03-9f47a41115a4" path="/Lotus_Dark.theme.json"/>
+    <themeProvider id="40b6d5e5-c8b1-4d60-bcb1-c3a747c1d46b" path="/Lotus_Light.theme.json"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
