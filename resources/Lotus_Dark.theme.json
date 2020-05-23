@@ -3,6 +3,7 @@
   "dark": true,
   "author": "blai30",
   "editorScheme": "/Lotus_Dark.xml",
+
   "colors": {
     "backgroundColor": "#141414",
     "foregroundColor": "#D9D9D9",
@@ -21,14 +22,15 @@
     "accentColor": "#009688",
     "excludedColor": "#2E3C43"
   },
+
   "ui": {
     "ActionButton": {
       "hoverBorderColor": "buttonColor"
     },
 
     "Button": {
-      "background": "buttonColor",
       "foreground": "textColor",
+      "background": "buttonColor",
       "startBackground": "buttonColor",
       "endBackground": "buttonColor",
       "select": "buttonColor",
@@ -52,12 +54,12 @@
     },
 
     "ComboBox": {
-      "background": "backgroundColor",
       "foreground": "foregroundColor",
-      "disabledBackground": "backgroundColor",
+      "background": "backgroundColor",
       "disabledForeground": "disabledColor",
-      "selectionBackground": "tableSelectedColor",
+      "disabledBackground": "backgroundColor",
       "selectionForeground": "foregroundColor",
+      "selectionBackground": "tableSelectedColor",
       "buttonBackground": "buttonColor",
       "nonEditableBackground": "backgroundColor",
       "ArrowButton": {
@@ -73,18 +75,18 @@
     },
 
     "CompletionPopup":  {
-      "background": "secondaryBackgroundColor",
       "foreground": "foregroundColor",
-      "selectionBackground": "selectionBackgroundColor",
+      "background": "secondaryBackgroundColor",
+      "infoForeground": "textColor",,
       "selectionForeground": "selectionForegroundColor",
+      "selectionBackground": "selectionBackgroundColor",
       "selectionInfoForeground": "selectionForegroundColor",
-      "selectionInactiveBackground": "highlightColor",
-      "infoForeground": "textColor"
+      "selectionInactiveBackground": "highlightColor"
     },
 
     "Component": {
-      "infoForeground": "textColor",
       "borderColor": "highlightColor",
+      "infoForeground": "textColor",
       "disabledBorderColor": "disabledColor",
       "focusedBorderColor": "highlightColor"
     },
@@ -103,144 +105,115 @@
     },
 
     "DefaultTabs": {
-      "underlineColor": "#1AEBFF",
-      "inactiveUnderlineColor": "#1AEBFF",
-      "underlineHeight": 5,
-      "hoverBackground": "#0f6780"
+      "background": "backgroundColor",
+      "borderColor": "backgroundColor",
+      "hoverBackground": "tableSelectedColor",
+      "hoverColor": "highlightColor",
+      "inactiveMaskColor": "contrastColor",
+      "underlinedTabBackground": "tableSelectedColor"
     },
 
     "DragAndDrop": {
-      "areaForeground": "#FFFFFF",
-      "areaBackground": "#00838f",
-      "areaBorderColor": "#1AEBFF"
+      "areaForeground": "foregroundColor",
+      "areaBackground": "backgroundColor",
+      "areaBorderColor": "backgroundColor"
     },
 
     "Editor": {
-      "background": "#1f1f1f",
-      "foreground": "#CCCCCC",
-      "shortcutForeground": "#D2F53C"
+      "foreground": "foregroundColor",
+      "background": "backgroundColor",
+      "shortcutForeground": "textColor"
     },
 
-    "EditorPane.inactiveBackground": "#000000",
+    "EditorPane": {
+      "inactiveBackground": "backgroundColor"
+    },
 
     "EditorTabs": {
-      "selectedForeground": "#FFFFFF",
-      "selectedBackground": "#0e5d73",
-      "inactiveMaskColor": "#000000FF",
-
-      "underlineColor": "#1AEBFF",
-      "underlineHeight": 4,
-
-      "underlinedTabBackground": "#000000",
-      "inactiveColoredFileBackground": "#00000000"
-    },
-
-    "FileColor": {
-      "Yellow": "#381C00",
-      "Green": "#092E15",
-      "Blue": "#00004D",
-      "Violet": "#471747",
-      "Orange": "#733000",
-      "Rose": "#4D0F22"
-    },
-
-    "FlameGraph": {
-      "JVMBackground": "#FFD333",
-      "JVMSearchNotMatchedBackground": "#806919",
-      "nativeBackground": "#1AEBFF",
-      "nativeSearchNotMatchedBackground":"#00838F",
-      "parentBackground":"#FFFFFF",
-      "parentSearchNotMatchedBackground": "#757575",
-
-      "JVMFocusBackground":"#3333FF",
-      "JVMFocusSearchNotMatchedBackground": "#3333FF",
-      "nativeFocusBackground": "#3333FF",
-      "nativeFocusSearchNotMatchedBackground":"#3333FF",
-      "parentFocusBackground":"#3333FF",
-      "parentFocusSearchNotMatchedBackground": "#3333FF",
-
-      "JVMFrameForeground":"#000000",
-      "nativeFrameForeground":"#000000",
-      "parentFrameForeground":"#000000",
-
-      "JVMFocusedFrameForeground": "#FFFFFF",
-      "nativeFocusedFrameForeground": "#FFFFFF",
-      "parentFocusedFrameForeground": "#FFFFFF"
+      "background": "backgroundColor",
+      "borderColor": "secondaryBackgroundColor",
+      "selectedBackground": "tableSelectedColor",
+      "hoverColor": "highlightColor",
+      "inactiveColoredFileBackground": "backgroundColor",
+      "underlinedTabBackground": "tableSelectedColor"
     },
 
     "InplaceRefactoringPopup": {
-      "background": "#450073",
-      "borderColor": "#E6E6E6"
+      "borderColor": "backgroundColor"
     },
 
     "Link": {
-      "activeForeground": "#D2F53C",
-      "hoverForeground": "#D2F53C",
-      "pressedForeground": "#D2F53C",
-      "visitedForeground": "#D2F53C",
-      "secondaryForeground": "#D2F53C"
+      "secondaryForeground": "textColor"
     },
 
     "MemoryIndicator": {
-      "usedBackground": "#3333FF",
-      "allocatedBackground": "#7e00d9"
+      "allocatedBackground": "secondaryBackgroundColor",
+      "usedBackground": "highlightColor"
     },
 
-    "NavBar.borderColor": "#b3b3b3",
+    "NavBar": {
+      "borderColor": "backgroundColor"
+    },
 
     "Notification": {
-      "background": "#000080",
+      "foreground": "foregroundColor",
+      "background": "notificationsColor",
 
-      "errorForeground": "#FFFFFF",
-      "errorBackground": "#800002",
-      "errorBorderColor": "#E6194B",
-
-      "MoreButton.innerBorderColor": "#000000",
+      "MoreButton": {
+        "foreground": "foregroundColor",
+        "background": "buttonColor",
+        "innerBorderColor": "buttonColor"
+      },
 
       "ToolWindow": {
-        "informativeForeground": "#FFFFFF",
-        "informativeBackground": "#450073",
-        "informativeBorderColor": "#e6e6e6",
-
-        "warningForeground": "#FFFFFF",
-        "warningBackground": "#804605",
-        "warningBorderColor": "#F58231",
-
-        "errorForeground": "#FFFFFF",
-        "errorBackground": "#800002",
-        "errorBorderColor": "#E6194B"
+        "informativeForeground": "foregroundColor",
+        "warningForeground": "foregroundColor",
+        "errorForeground": "foregroundColor"
       }
     },
 
     "ParameterInfo": {
-      "background": "#281A33",
-      "foreground": "#CCCCCC",
-      "currentOverloadBackground": "#450073",
-      "currentParameterForeground": "#FFFFFF"
+      "foreground": "foregroundColor",
+      "background": "secondaryBackgroundColor",
+      "borderColor": "tableSelectedColor",
+      "disabledForeground": "disabledColor",
+      "infoForeground": "textColor",
+      "currentOverloadBackground": "highlightColor",
+      "lineSeparatorColor": "tableSelectedColor"
     },
 
     "Plugins": {
-      "Tab": {
-        "selectedForeground": "#FFFFFF",
-        "selectedBackground": "#3333FF",
-        "hoverBackground": "#3333FF"
-      },
+      "disabledForeground": "disabledColor",
+      "lightSelectionBackground": "selectionBackgroundColor",
+      "tagBackground": "highlightColor",
+      "eapTagBackground": "highlightColor",
 
-      "SearchField.borderColor": "#B3B3B3",
-      "SectionHeader.background": "#000080",
-      "tagBackground": "#000080",
-      "tagForeground": "#FFFFFF",
+      "Tab": {
+        "selectedForeground": "selectionForegroundColor",
+        "selectedBackground": "tableSelectedColor",
+        "hoverBackground": "tableSelectedColor"
+      },
 
       "Button": {
-        "installForeground": "#1AEBFF",
-        "installBorderColor":"#1AEBFF",
-        "installFillForeground": "#000000",
-        "installFillBackground": "#1AEBFF",
-        "updateForeground":"#000000",
-        "updateBackground": "#1AEBFF"
+        "installForeground": "foregroundColor",
+        "installBackground": "buttonColor",
+        "installBorderColor":"buttonColor",
+        "installFillForeground": "disabledColor",
+        "installFillBackground": "buttonColor",
+        "installFocusedBackground": "highlightColor",
+        "updateForeground":"foregroundColor",
+        "updateBackground": "buttonColor",
+        "updateBorderColor": "buttonColor"
       },
 
-      "lightSelectionBackground": "#000066"
+      "SearchField": {
+        "borderColor": "secondBorderColor"
+      },
+
+      "SectionHeader": {
+        "foreground": "foregroundColor",
+        "background": "secondaryBackgroundColor"
+      }
     },
 
     "Popup": {
