@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.blai30.lotus.theme</id>
   <name>Lotus Theme</name>
-  <version>1.0</version>
+  <version>1.1</version>
   <vendor url="http://www.bhlai.com">blai30</vendor>
 
   <description><![CDATA[
@@ -23,6 +23,11 @@
     ]]></description>
 
   <change-notes><![CDATA[
+    <h4>1.1</h4>
+    <ul>
+        <li>Added plugin logo.</li>
+    </ul>
+
     <h4>1.0</h4>
     <h5>Lotus Dark</h5>
     <ul>
