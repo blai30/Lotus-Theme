@@ -310,7 +310,7 @@
 
     "OptionPane": {
       "foreground": "foregroundColor",
-      "background": "contrastColor",
+      "background": "backgroundColor",
       "messageForeground": "foregroundColor"
     },
 
@@ -575,6 +575,9 @@
     },
 
     "TitlePane": {
+      "background": "backgroundColor",
+      "inactiveBackground": "disabledColor",
+
       "Button": {
         "hoverBackground": "selectionTransparentBackgroundColor"
       }
