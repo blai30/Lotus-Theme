@@ -44,8 +44,8 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-    <themeProvider id="c3f84cf4-72fb-49ac-bd03-9f47a41115a4" path="/Lotus_Dark.theme.json"/>
-    <themeProvider id="40b6d5e5-c8b1-4d60-bcb1-c3a747c1d46b" path="/Lotus_Light.theme.json"/>
+    <themeProvider id="c3f84cf4-72fb-49ac-bd03-9f47a41115a4" path="/themes/Lotus_Dark.theme.json"/>
+    <themeProvider id="40b6d5e5-c8b1-4d60-bcb1-c3a747c1d46b" path="/themes/Lotus_Light.theme.json"/>
   </extensions>
 
   <actions>

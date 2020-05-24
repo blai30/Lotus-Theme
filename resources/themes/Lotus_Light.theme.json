@@ -2,7 +2,7 @@
   "name": "Lotus Light",
   "dark": false,
   "author": "blai30",
-  "editorScheme": "/Lotus_Light.xml",
+  "editorScheme": "/colors/Lotus_Light.xml",
 
   "colors": {
     "backgroundColor": "#fafafa",
@@ -744,25 +744,6 @@
 
   "icons": {
     "ColorPalette": {
-      "Actions.Grey": "#FFFFFF",
-      "Actions.Red": "#FF3633",
-      "Actions.Yellow": "#FFD333",
-      "Actions.Green": "#00E61F",
-      "Actions.Blue": "#00EAFF",
-      "Actions.GreyInline.Dark": "#FFFFFFFF",
-
-      "Objects.Grey": "#FFFFFFFF",
-      "Objects.RedStatus": "#FF4340FF",
-      "Objects.Red": "#FF4340FF",
-      "Objects.Pink": "#FF8FA2FF",
-      "Objects.Yellow": "#FFD333FF",
-      "Objects.Green": "#00E61FFF",
-      "Objects.Blue": "#00EAFFFF",
-      "Objects.Purple": "#A880FFFF",
-      "Objects.BlackText": "#000000FF",
-      "Objects.YellowDark": "#FFD333FF",
-      "Objects.GreenAndroid": "#00E61FFF",
-
       "Checkbox.Background.Default": "#141414",
       "Checkbox.Background.Default.Dark": "#141414",
       "Checkbox.Background.Disabled": "#222222",
