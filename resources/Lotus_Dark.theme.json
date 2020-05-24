@@ -29,6 +29,7 @@
       "foreground": "foregroundColor",
       "background": "backgroundColor",
       "textForeground": "textColor",
+      "textBackground": "backgroundColor",
       "errorForeground": "#FA3232",
       "infoForeground": "foregroundColor",
 
@@ -140,7 +141,7 @@
       "background": "secondaryBackgroundColor",
       "infoForeground": "textColor",
       "selectionForeground": "selectionForegroundColor",
-      "selectionBackground": "selectionBackgroundColor",
+      "selectionBackground": "secondaryBackgroundColor",
       "selectionInfoForeground": "selectionForegroundColor",
       "selectionInactiveBackground": "highlightColor"
     },
@@ -317,11 +318,14 @@
     },
 
     "OptionPane": {
-      "background": "backgroundColor",
+      "foreground": "foregroundColor",
+      "background": "contrastColor",
       "messageForeground": "foregroundColor"
     },
 
     "Panel": {
+      "foreground": "foregroundColor",
+      "background": "backgroundColor"
     },
 
     "ParameterInfo": {
@@ -650,7 +654,7 @@
     },
 
     "Tree": {
-      "foreground": "textColor",
+      "foreground": "foregroundColor",
       "background": "contrastColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "treeSelectionColor",
