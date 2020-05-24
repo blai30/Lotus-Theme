@@ -70,21 +70,12 @@
 
     "Button": {
       "foreground": "textColor",
-      "background": "buttonColor",
       "startBackground": "buttonColor",
       "endBackground": "buttonColor",
-      "select": "buttonColor",
-      "highlight": "selectionForegroundColor",
       "disabledText": "disabledColor",
-      "shadowColor": "secondBorderColor",
-      "disabledBorderColor": "secondBorderColor",
 
       "default": {
-        "foreground": "selectionForegroundColor",
-        "startBackground": "tableSelectedColor",
-        "endBackground": "tableSelectedColor",
-        "borderColor": "buttonColor",
-        "shadowColor": "backgroundColor"
+        "foreground": "selectionForegroundColor"
       }
     },
 
