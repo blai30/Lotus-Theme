@@ -1,6 +1,7 @@
 <idea-plugin>
   <id>com.blai30.lotus</id>
   <name>Lotus Theme</name>
+  <version>1.0</version>
   <vendor url="http://www.bhlai.com">blai30</vendor>
 
   <description><![CDATA[
