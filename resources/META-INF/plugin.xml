@@ -22,8 +22,15 @@
     ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+    <h4>1.0</h4>
+    <h5>Lotus Dark</h5>
+    <ul>
+        <li>Initial release.</li>
+    </ul>
+    <h5>Lotus Light</h5>
+    <ul>
+        <li>Initial release.</li>
+    </ul>
     ]]>
   </change-notes>
 
