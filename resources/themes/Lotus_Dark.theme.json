@@ -19,7 +19,7 @@
     "highlightColor": "#343434",
     "treeSelectionColor": "#292929",
     "notificationsColor": "#111111",
-    "accentColor": "#96004e",
+    "accentColor": "#721c48",
     "excludedColor": "#432e3b",
     "selectionTransparentBackgroundColor": "#191919"
   },
@@ -69,13 +69,17 @@
     },
 
     "Button": {
-      "foreground": "textColor",
-      "startBackground": "buttonColor",
-      "endBackground": "buttonColor",
-      "disabledText": "disabledColor",
+      "foreground": "foregroundColor",
+      "startBackground": "secondaryBackgroundColor",
+      "endBackground": "secondaryBackgroundColor",
+      "shadowColor": "backgroundColor",
+      "arc": "0",
 
       "default": {
-        "foreground": "selectionForegroundColor"
+        "foreground": "selectionForegroundColor",
+        "startBackground": "selectionBackgroundColor",
+        "endBackground": "selectionBackgroundColor",
+        "shadowColor": "backgroundColor"
       }
     },
 

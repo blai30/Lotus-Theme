@@ -8,7 +8,7 @@
     "backgroundColor": "#fafafa",
     "foregroundColor": "#563d58",
     "textColor": "#b094af",
-    "selectionBackgroundColor": "#ffb0f8",
+    "selectionBackgroundColor": "#ffd0fb",
     "selectionForegroundColor": "#4e3a4c",
     "buttonColor": "#f3f4f5",
     "secondaryBackgroundColor": "#eae8e8",
@@ -17,9 +17,9 @@
     "tableSelectedColor": "#e7e7e8",
     "secondBorderColor": "#d3e1e8",
     "highlightColor": "#e7e7e8",
-    "treeSelectionColor": "#ffa3f4",
+    "treeSelectionColor": "#ffb6f8",
     "notificationsColor": "#eae8e8",
-    "accentColor": "#d400a6",
+    "accentColor": "#de67bb",
     "excludedColor": "#eae8e8",
     "selectionTransparentBackgroundColor": "#aaaaaa"
   },
@@ -69,13 +69,17 @@
     },
 
     "Button": {
-      "foreground": "textColor",
-      "startBackground": "buttonColor",
-      "endBackground": "buttonColor",
-      "disabledText": "disabledColor",
+      "foreground": "foregroundColor",
+      "startBackground": "secondaryBackgroundColor",
+      "endBackground": "secondaryBackgroundColor",
+      "shadowColor": "backgroundColor",
+      "arc": "0",
 
       "default": {
-        "foreground": "selectionForegroundColor"
+        "foreground": "selectionForegroundColor",
+        "startBackground": "selectionBackgroundColor",
+        "endBackground": "selectionBackgroundColor",
+        "shadowColor": "backgroundColor"
       }
     },
 
