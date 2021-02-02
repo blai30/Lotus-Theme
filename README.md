@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://plugins.jetbrains.com/embeddable/install/14369">
+  <a href="https://plugins.jetbrains.com/plugin/14369-lotus-theme">
     <img src="/resources/META-INF/pluginIcon.svg" width="320" height="320" alt="logo"></img>
   </a>
 </div>
