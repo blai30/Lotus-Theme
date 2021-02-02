@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.blai30.lotus.theme</id>
   <name>Lotus Theme</name>
-  <version>1.2</version>
+  <version>1.3</version>
   <vendor url="http://www.bhlai.com">blai30</vendor>
 
   <description><![CDATA[
@@ -19,10 +19,14 @@
     <p>Visit the plugin page to view screenshots</p>
     <br />
 
-    <h3>This plugin depends on Rainbow Brackets.</h3>
+    <h3>This plugin includes colors for Rainbow Brackets.</h3>
     ]]></description>
 
   <change-notes><![CDATA[
+    <h4>1.3</h4>
+    <ul>
+        <li>Removed Rainbow Brackets dependency, still includes colors for it.</li>
+    </ul>
     <h4>1.2</h4>
     <h5>Lotus Dark</h5>
     <ul>
@@ -57,7 +61,6 @@
   <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
   <depends>com.intellij.modules.platform</depends>
-  <depends>izhangzhihao.rainbow.brackets</depends>
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
