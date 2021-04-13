@@ -1,9 +1,12 @@
 <div align="center">
   <a href="https://plugins.jetbrains.com/plugin/14369-lotus-theme">
-    <img src="/resources/META-INF/pluginIcon.svg" width="320" height="320" alt="logo"></img>
+    <img src="https://raw.githubusercontent.com/blai30/Lotus-Theme/main/src/main/resources/META-INF/pluginIcon.svg" width="320" height="320" alt="logo">
   </a>
 </div>
 <h1>Lotus Theme</h1>
+
+<img src="https://github.com/blai30/Lotus-Theme/blob/main/src/main/resources/screenshots/dark.png?raw=true" alt="dark">
+<img src="https://github.com/blai30/Lotus-Theme/blob/main/src/main/resources/screenshots/light.png?raw=true" alt="light">
 
 ![Downloads](https://img.shields.io/jetbrains/plugin/d/14369-lotus-theme)
 ![Rating](https://img.shields.io/jetbrains/plugin/r/rating/14369-lotus-theme)
@@ -15,7 +18,5 @@ Includes a dark theme and light theme.
     <li>Lotus Dark</li>
     <li>Lotus Light</li>
 </ul>
-<img src="/resources/screenshots/dark.png">
-<img src="/resources/screenshots/light.png">
 
-<h3>This plugin depends on Rainbow Brackets.</h3>
+<h3>This theme contains colors for Rainbow Brackets.</h3>
