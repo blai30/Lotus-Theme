@@ -6,8 +6,10 @@
     <description><![CDATA[
     <h1>Lotus Theme Plugin</h1>
 
-    <img src="https://github.com/blai30/Lotus-Theme/blob/main/src/main/resources/screenshots/dark.png?raw=true" alt="dark">
-    <img src="https://github.com/blai30/Lotus-Theme/blob/main/src/main/resources/screenshots/light.png?raw=true" alt="light">
+    <img src="https://raw.githubusercontent.com/blai30/Lotus-Theme/main/src/main/resources/screenshots/dark.png" alt="dark" width="400">
+    <br />
+    <img src="https://raw.githubusercontent.com/blai30/Lotus-Theme/main/src/main/resources/screenshots/light.png" alt="light" width="400">
+    <br />
 
     <h2>A theme pack with pastel font colors for the JetBrains platform.</h2>
     <hr />
