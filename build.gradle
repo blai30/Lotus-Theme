@@ -1,0 +1,62 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.7.2'
+}
+
+group 'com.blai30'
+version '1.4'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version '2021.1'
+}
+patchPluginXml {
+    changeNotes """
+    <h4>1.4</h4>
+    <h5>Lotus Dark</h5>
+    <ul>
+        <li>Update auto-complete window colors.</li>
+    </ul>
+    <h4>1.3</h4>
+    <ul>
+        <li>Removed Rainbow Brackets dependency, still includes colors for it.</li>
+    </ul>
+    <h4>1.2</h4>
+    <h5>Lotus Dark</h5>
+    <ul>
+        <li>Updated button colors.</li>
+    </ul>
+    <h5>Lotus Light</h5>
+    <ul>
+        <li>Updated button colors.</li>
+    </ul>
+
+    <h4>1.1</h4>
+    <ul>
+        <li>Added plugin logo.</li>
+    </ul>
+
+    <h4>1.0</h4>
+    <h5>Lotus Dark</h5>
+    <ul>
+        <li>Initial release.</li>
+    </ul>
+    <h5>Lotus Light</h5>
+    <ul>
+        <li>Initial release.</li>
+    </ul>
+    ]]>
+      """
+}
+test {
+    useJUnitPlatform()
+}
