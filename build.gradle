@@ -1,26 +1,31 @@
 plugins {
-    id 'java'
-    id 'org.jetbrains.intellij' version '0.7.2'
+    id "java"
+    id "org.jetbrains.intellij" version "1.0"
 }
 
-group 'com.blai30'
-version '1.4'
+group "com.blai30"
+version "1.5"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.7.0"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.7.0"
 }
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '2021.1'
+    version = "2021.1"
+    updateSinceUntilBuild = false
 }
 patchPluginXml {
-    changeNotes """
+    changeNotes = """
+    <h4>1.5</h4>
+    <ul>
+        <li>Set updateSinceUntilBuild to false to prevent IDE version compatibility checks.</li>
+    </ul>
     <h4>1.4</h4>
     <h5>Lotus Dark</h5>
     <ul>
