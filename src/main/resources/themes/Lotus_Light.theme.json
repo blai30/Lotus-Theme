@@ -11,7 +11,7 @@
     "selectionBackgroundColor": "#ffd0fb",
     "selectionForegroundColor": "#4e3a4c",
     "buttonColor": "#f3f4f5",
-    "secondaryBackgroundColor": "#eae8e8",
+    "secondaryBackgroundColor": "#ffd0fb",
     "disabledColor": "#d2d4d5",
     "contrastColor": "#f4f4f4",
     "tableSelectedColor": "#e7e7e8",
@@ -748,9 +748,9 @@
 
   "icons": {
     "ColorPalette": {
-      "Checkbox.Background.Default": "#141414",
+      "Checkbox.Background.Default": "#FAFAFA",
       "Checkbox.Background.Default.Dark": "#141414",
-      "Checkbox.Background.Disabled": "#222222",
+      "Checkbox.Background.Disabled": "#727272",
       "Checkbox.Background.Disabled.Dark": "#222222",
 
       "Checkbox.Border.Disabled": "#222222",
