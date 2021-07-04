@@ -11,16 +11,16 @@
     "selectionBackgroundColor": "#323232",
     "selectionForegroundColor": "#D7D7D7",
     "buttonColor": "#1C1C1C",
-    "secondaryBackgroundColor": "#343434",
+    "secondaryBackgroundColor": "#094269",
     "disabledColor": "#5A5A5A",
     "contrastColor": "#101010",
     "tableSelectedColor": "#262626",
     "secondBorderColor": "#1E1E1E",
-    "highlightColor": "#343434",
+    "highlightColor": "#565656",
     "treeSelectionColor": "#292929",
     "notificationsColor": "#111111",
-    "accentColor": "#721c48",
-    "excludedColor": "#432e3b",
+    "accentColor": "#670000",
+    "excludedColor": "#3e1818",
     "selectionTransparentBackgroundColor": "#191919"
   },
 
@@ -70,8 +70,8 @@
 
     "Button": {
       "foreground": "foregroundColor",
-      "startBackground": "secondaryBackgroundColor",
-      "endBackground": "secondaryBackgroundColor",
+      "startBackground": "buttonColor",
+      "endBackground": "buttonColor",
       "shadowColor": "backgroundColor",
       "arc": "0",
 
@@ -188,7 +188,7 @@
 
     "EditorTabs": {
       "background": "backgroundColor",
-      "borderColor": "secondaryBackgroundColor",
+      "borderColor": "selectionBackgroundColor",
       "selectedBackground": "tableSelectedColor",
       "hoverColor": "highlightColor",
       "inactiveColoredFileBackground": "backgroundColor",
@@ -249,7 +249,7 @@
 
     "List": {
       "foreground": "foregroundColor",
-      "background": "secondaryBackgroundColor",
+      "background": "backgroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "selectionBackgroundColor",
       "selectionInactiveForeground": "selectionForegroundColor",
@@ -268,7 +268,7 @@
       "disabledForeground": "disabledColor",
       "acceleratorForeground": "textColor",
       "acceleratorSelectionForeground": "selectionForegroundColor",
-      "borderColor": "secondaryBackgroundColor",
+      "borderColor": "selectionBackgroundColor",
       "separatorColor": "secondBorderColor"
     },
 
@@ -325,7 +325,7 @@
 
     "ParameterInfo": {
       "foreground": "foregroundColor",
-      "background": "secondaryBackgroundColor",
+      "background": "backgroundColor",
       "borderColor": "tableSelectedColor",
       "disabledForeground": "disabledColor",
       "infoForeground": "textColor",
@@ -371,14 +371,14 @@
 
       "SectionHeader": {
         "foreground": "foregroundColor",
-        "background": "secondaryBackgroundColor"
+        "background": "backgroundColor"
       }
     },
 
     "Popup": {
       "inactiveBorderColor": "backgroundColor",
       "separatorForeground": "foregroundColor",
-      "separatorColor": "secondaryBackgroundColor",
+      "separatorColor": "selectionBackgroundColor",
       "borderColor": "contrastColor",
 
       "Advertiser": {
@@ -468,7 +468,7 @@
     "Separator": {
       "foreground": "secondaryBackgroundColor",
       "background": "secondaryBackgroundColor",
-      "separatorColor": "secondaryBackgroundColor"
+      "separatorColor": "selectionBackgroundColor"
     },
 
     "SettingsTree": {
@@ -547,7 +547,7 @@
 
     "TextArea": {
       "foreground": "foregroundColor",
-      "background": "secondaryBackgroundColor",
+      "background": "backgroundColor",
       "inactiveForeground": "disabledColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "tableSelectedColor"
@@ -598,7 +598,7 @@
 
     "Toolbar": {
       "Floating": {
-        "background": "secondaryBackgroundColor"
+        "background": "selectionBackgroundColor"
       }
     },
 
@@ -633,9 +633,9 @@
       },
 
       "Header": {
-        "background": "secondaryBackgroundColor",
+        "background": "selectionBackgroundColor",
         "inactiveBackground": "backgroundColor",
-        "borderColor": "secondaryBackgroundColor"
+        "borderColor": "selectionBackgroundColor"
       },
 
       "HeaderCloseButton": {
