@@ -4,7 +4,7 @@ plugins {
 }
 
 group "com.blai30"
-version "1.7"
+version "1.8"
 
 repositories {
     mavenCentral()
@@ -22,6 +22,11 @@ intellij {
 }
 patchPluginXml {
     changeNotes = """
+    <h4>1.8</h4>
+    <h5>Lotus Light</h5>
+    <ul>
+        <li>Fix colors for inline quick documentation.</li>
+    </ul>
     <h4>1.7</h4>
     <h5>Lotus Dark</h5>
     <ul>
@@ -43,21 +48,21 @@ patchPluginXml {
     </ul>
     <h4>1.3</h4>
     <ul>
-        <li>Removed Rainbow Brackets dependency, still includes colors for it.</li>
+        <li>Remove Rainbow Brackets dependency, still includes colors for it.</li>
     </ul>
     <h4>1.2</h4>
     <h5>Lotus Dark</h5>
     <ul>
-        <li>Updated button colors.</li>
+        <li>Update button colors.</li>
     </ul>
     <h5>Lotus Light</h5>
     <ul>
-        <li>Updated button colors.</li>
+        <li>Update button colors.</li>
     </ul>
 
     <h4>1.1</h4>
     <ul>
-        <li>Added plugin logo.</li>
+        <li>Add plugin logo.</li>
     </ul>
 
     <h4>1.0</h4>
