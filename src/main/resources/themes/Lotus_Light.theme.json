@@ -110,10 +110,8 @@
       "foreground": "foregroundColor",
       "background": "backgroundColor",
       "disabledForeground": "disabledColor",
-      "disabledBackground": "backgroundColor",
       "selectionForeground": "foregroundColor",
       "selectionBackground": "tableSelectedColor",
-      "buttonBackground": "buttonColor",
       "nonEditableBackground": "backgroundColor",
       "ArrowButton": {
         "background": "buttonColor",
@@ -133,11 +131,7 @@
 
     "CompletionPopup":  {
       "foreground": "foregroundColor",
-      "background": "secondaryBackgroundColor",
-      "infoForeground": "textColor",
-      "selectionForeground": "selectionForegroundColor",
-      "selectionBackground": "secondaryBackgroundColor",
-      "selectionInfoForeground": "selectionForegroundColor",
+      "selectionBackground": "selectionBackgroundColor",
       "selectionInactiveBackground": "highlightColor"
     },
 
@@ -157,7 +151,6 @@
     },
 
     "DebuggerTabs": {
-      "selectedBackground": "highlightColor",
       "underlinedTabBackground": "tableSelectedColor"
     },
 
@@ -165,15 +158,12 @@
       "background": "backgroundColor",
       "borderColor": "backgroundColor",
       "hoverBackground": "tableSelectedColor",
-      "hoverColor": "highlightColor",
-      "inactiveMaskColor": "contrastColor",
       "underlinedTabBackground": "tableSelectedColor"
     },
 
     "DragAndDrop": {
       "areaForeground": "foregroundColor",
-      "areaBackground": "backgroundColor",
-      "areaBorderColor": "backgroundColor"
+      "areaBackground": "backgroundColor"
     },
 
     "Editor": {
@@ -189,8 +179,6 @@
     "EditorTabs": {
       "background": "backgroundColor",
       "borderColor": "secondaryBackgroundColor",
-      "selectedBackground": "tableSelectedColor",
-      "hoverColor": "highlightColor",
       "inactiveColoredFileBackground": "backgroundColor",
       "underlinedTabBackground": "tableSelectedColor"
     },
@@ -220,10 +208,6 @@
     },
 
     "HelpTooltip": {
-      "foreground": "foregroundColor",
-      "background": "backgroundColor",
-      "infoForeground": "textColor",
-      "shortcutForeground": "textColor",
       "borderColor": "secondBorderColor"
     },
 
@@ -274,7 +258,6 @@
 
     "MenuBar": {
       "foreground": "foregroundColor",
-      "background": "backgroundColor",
       "disabledForeground": "disabledColor",
       "disabledBackground": "backgroundColor",
       "borderColor": "backgroundColor",
@@ -287,8 +270,7 @@
       "disabledForeground": "disabledColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "selectionBackgroundColor",
-      "acceleratorForeground": "textColor",
-      "acceleratorSelectionForeground": "selectionForegroundColor"
+      "acceleratorForeground": "textColor"
     },
 
     "NavBar": {
@@ -466,8 +448,6 @@
     },
 
     "Separator": {
-      "foreground": "secondaryBackgroundColor",
-      "background": "secondaryBackgroundColor",
       "separatorColor": "secondaryBackgroundColor"
     },
 
@@ -492,7 +472,6 @@
     },
 
     "Spinner": {
-      "foreground": "foregroundColor",
       "background": "backgroundColor"
     },
 
@@ -504,8 +483,7 @@
     },
 
     "StatusBar": {
-      "borderColor": "backgroundColor",
-      "hoverBackground": "backgroundColor"
+      "borderColor": "backgroundColor"
     },
 
     "TabbedPane": {
@@ -644,7 +622,6 @@
 
       "HeaderTab": {
         "selectedInactiveBackground": "contrastColor",
-        "selectedBackground": "contrastColor",
         "underlinedTabBackground": "backgroundColor",
         "underlinedTabInactiveBackground": "contrastColor",
         "hoverBackground": "highlightColor"
@@ -656,7 +633,6 @@
       "background": "contrastColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "treeSelectionColor",
-      "selectionInactiveForeground": "selectionForegroundColor",
       "selectionInactiveBackground": "tableSelectedColor",
       "hash": "secondBorderColor"
     },
