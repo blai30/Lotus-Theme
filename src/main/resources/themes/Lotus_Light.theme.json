@@ -240,6 +240,14 @@
       "selectionInactiveBackground": "selectionTransparentBackgroundColor"
     },
 
+    "MainMenu": {
+      "foreground": "backgroundColor"
+    },
+
+    "MainToolbar": {
+      "background": "foregroundColor"
+    },
+
     "MemoryIndicator": {
       "allocatedBackground": "secondaryBackgroundColor",
       "usedBackground": "highlightColor"
