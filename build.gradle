@@ -4,7 +4,7 @@ plugins {
 }
 
 group "com.blai30"
-version "1.11"
+version "1.12"
 
 repositories {
     mavenCentral()
@@ -22,6 +22,11 @@ intellij {
 }
 patchPluginXml {
     changeNotes = """
+    <h4>1.12</h4>
+    <h5>Lotus Light</h5>
+    <ul>
+        <li>Adjust icon colors.</li>
+    </ul>
     <h4>1.11</h4>
     <h5>Lotus Light</h5>
     <ul>
