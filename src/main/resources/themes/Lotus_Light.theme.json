@@ -240,14 +240,6 @@
       "selectionInactiveBackground": "selectionTransparentBackgroundColor"
     },
 
-    "MainMenu": {
-      "foreground": "backgroundColor"
-    },
-
-    "MainToolbar": {
-      "background": "foregroundColor"
-    },
-
     "MemoryIndicator": {
       "allocatedBackground": "secondaryBackgroundColor",
       "usedBackground": "highlightColor"
@@ -732,6 +724,14 @@
 
   "icons": {
     "ColorPalette": {
+      "Actions.Grey": "#000000",
+      "Actions.GreyInline": "#000000",
+      "Actions.GreyInline.Dark": "#000000",
+      "Actions.Yellow": "#000000",
+      "Objects.Grey": "#000000",
+      "Objects.Yellow": "#000000",
+      "Objects.YellowDark": "#000000",
+
       "Checkbox.Background.Default": "#FAFAFA",
       "Checkbox.Background.Default.Dark": "#141414",
       "Checkbox.Background.Disabled": "#727272",
