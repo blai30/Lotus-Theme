@@ -3,6 +3,7 @@
   "dark": false,
   "author": "blai30",
   "editorScheme": "/colors/Lotus_Light.xml",
+  "parentTheme": "Islands Light",
 
   "colors": {
     "backgroundColor": "#fafafa",
@@ -13,6 +14,7 @@
     "buttonColor": "#f3f4f5",
     "secondaryBackgroundColor": "#fafafa",
     "disabledColor": "#d2d4d5",
+    "disabledForegroundColor": "#6F6F6F",
     "contrastColor": "#f4f4f4",
     "tableSelectedColor": "#e7e7e8",
     "secondBorderColor": "#d3e1e8",
@@ -21,7 +23,9 @@
     "notificationsColor": "#eae8e8",
     "accentColor": "#de67bb",
     "excludedColor": "#eae8e8",
-    "selectionTransparentBackgroundColor": "#aaaaaa"
+    "selectionTransparentBackgroundColor": "#aaaaaa",
+    "treeInactiveSelectionColor": "#898989",
+    "mainWindowColor": "#E2E2E2"
   },
 
   "ui": {
@@ -86,7 +90,7 @@
     "CheckBox": {
       "foreground": "foregroundColor",
       "background": "backgroundColor",
-      "disabledText": "disabledColor",
+      "disabledText": "disabledForegroundColor",
       "select": "selectionForegroundColor"
     },
 
@@ -95,7 +99,7 @@
       "background": "backgroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "selectionBackgroundColor",
-      "disabledForeground": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
       "disabledBackground": "backgroundColor",
       "acceleratorForeground": "textColor",
       "acceleratorSelectionForeground": "textColor"
@@ -109,14 +113,14 @@
     "ComboBox": {
       "foreground": "foregroundColor",
       "background": "backgroundColor",
-      "disabledForeground": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
       "selectionForeground": "foregroundColor",
       "selectionBackground": "tableSelectedColor",
       "nonEditableBackground": "backgroundColor",
       "ArrowButton": {
         "background": "buttonColor",
         "iconColor": "foregroundColor",
-        "disabledIconColor": "disabledColor",
+        "disabledIconColor": "disabledForegroundColor",
         "nonEditableBackground": "backgroundColor"
       }
     },
@@ -180,7 +184,10 @@
       "background": "backgroundColor",
       "borderColor": "secondaryBackgroundColor",
       "inactiveColoredFileBackground": "backgroundColor",
-      "underlinedTabBackground": "tableSelectedColor"
+      "underlinedTabBackground": "tableSelectedColor",
+      "underlinedBorderColor": "accentColor",
+      "inactiveUnderlinedTabBorderColor": "secondBorderColor",
+      "inactiveUnderlinedTabBackground": "backgroundColor"
     },
 
     "FileColor": {
@@ -194,7 +201,7 @@
       "background": "backgroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "tableSelectedColor",
-      "inactiveForeground": "disabledColor"
+      "inactiveForeground": "disabledForegroundColor"
     },
 
     "Group": {
@@ -219,12 +226,16 @@
       "borderColor": "backgroundColor"
     },
 
+    "Island": {
+      "borderColor": "backgroundColor"
+    },
+
     "Label": {
       "foreground": "foregroundColor",
       "infoForeground": "textColor",
       "selectedForeground": "selectionForegroundColor",
-      "disabledForeground": "disabledColor",
-      "disabledText": "disabledColor"
+      "disabledForeground": "disabledForegroundColor",
+      "disabledText": "disabledForegroundColor"
     },
 
     "Link": {
@@ -240,6 +251,14 @@
       "selectionInactiveBackground": "selectionTransparentBackgroundColor"
     },
 
+    "MainToolbar": {
+      "borderColor": "#00000000"
+    },
+
+    "MainWindow": {
+      "background": "mainWindowColor"
+    },
+
     "MemoryIndicator": {
       "allocatedBackground": "secondaryBackgroundColor",
       "usedBackground": "highlightColor"
@@ -249,7 +268,7 @@
       "foreground": "foregroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "selectionBackgroundColor",
-      "disabledForeground": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
       "acceleratorForeground": "textColor",
       "acceleratorSelectionForeground": "selectionForegroundColor",
       "borderColor": "secondaryBackgroundColor",
@@ -258,7 +277,7 @@
 
     "MenuBar": {
       "foreground": "foregroundColor",
-      "disabledForeground": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
       "disabledBackground": "backgroundColor",
       "borderColor": "backgroundColor",
       "highlight": "backgroundColor",
@@ -267,7 +286,7 @@
 
     "MenuItem": {
       "foreground": "foregroundColor",
-      "disabledForeground": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "selectionBackgroundColor",
       "acceleratorForeground": "textColor"
@@ -309,7 +328,7 @@
       "foreground": "foregroundColor",
       "background": "secondaryBackgroundColor",
       "borderColor": "tableSelectedColor",
-      "disabledForeground": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
       "infoForeground": "textColor",
       "currentOverloadBackground": "highlightColor",
       "lineSeparatorColor": "tableSelectedColor"
@@ -320,11 +339,11 @@
       "background": "backgroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "tableSelectedColor",
-      "inactiveForeground": "disabledColor"
+      "inactiveForeground": "disabledForegroundColor"
     },
 
     "Plugins": {
-      "disabledForeground": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
       "lightSelectionBackground": "selectionBackgroundColor",
       "tagBackground": "highlightColor",
       "eapTagBackground": "highlightColor",
@@ -339,7 +358,7 @@
         "installForeground": "foregroundColor",
         "installBackground": "buttonColor",
         "installBorderColor":"buttonColor",
-        "installFillForeground": "disabledColor",
+        "installFillForeground": "disabledForegroundColor",
         "installFillBackground": "buttonColor",
         "installFocusedBackground": "highlightColor",
         "updateForeground":"foregroundColor",
@@ -395,13 +414,13 @@
     "RadioButton": {
       "foreground": "foregroundColor",
       "background": "backgroundColor",
-      "disabledText": "disabledColor"
+      "disabledText": "disabledForegroundColor"
     },
 
     "RadioButtonMenuItem": {
       "foreground": "foregroundColor",
       "selectionBackground": "selectionBackgroundColor",
-      "disabledForeground": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
       "acceleratorForeground": "textColor",
       "acceleratorSelectionForeground": "textColor"
     },
@@ -431,7 +450,7 @@
       "SearchField": {
         "background": "contrastColor",
         "borderColor": "backgroundColor",
-        "infoForeground": "disabledColor"
+        "infoForeground": "disabledForegroundColor"
       },
 
       "Tab": {
@@ -483,14 +502,14 @@
     },
 
     "StatusBar": {
-      "borderColor": "backgroundColor"
+      "borderColor": "#00000000"
     },
 
     "TabbedPane": {
       "foreground": "foregroundColor",
       "background": "backgroundColor",
-      "disabledForeground": "disabledColor",
-      "disabledUnderlineColor": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
+      "disabledUnderlineColor": "disabledForegroundColor",
       "hoverColor": "highlightColor",
       "focusColor": "tableSelectedColor",
       "contentAreaColor": "highlightColor"
@@ -526,7 +545,7 @@
     "TextArea": {
       "foreground": "foregroundColor",
       "background": "secondaryBackgroundColor",
-      "inactiveForeground": "disabledColor",
+      "inactiveForeground": "disabledForegroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "tableSelectedColor"
     },
@@ -537,7 +556,7 @@
     "TextField": {
       "foreground": "foregroundColor",
       "background": "backgroundColor",
-      "inactiveForeground": "disabledColor",
+      "inactiveForeground": "disabledForegroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "tableSelectedColor"
     },
@@ -545,7 +564,7 @@
     "TextPane": {
       "foreground": "foregroundColor",
       "background": "backgroundColor",
-      "inactiveForeground": "disabledColor",
+      "inactiveForeground": "disabledForegroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "tableSelectedColor"
     },
@@ -571,7 +590,7 @@
       "offBackground": "foregroundColor",
       "buttonColor":  "buttonColor",
       "borderColor": "buttonColor",
-      "disabledText": "disabledColor"
+      "disabledText": "disabledForegroundColor"
     },
 
     "Toolbar": {
@@ -625,6 +644,10 @@
         "underlinedTabBackground": "backgroundColor",
         "underlinedTabInactiveBackground": "contrastColor",
         "hoverBackground": "highlightColor"
+      },
+
+      "Stripe": {
+        "borderColor": "#00000000"
       }
     },
 
@@ -633,7 +656,8 @@
       "background": "contrastColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "treeSelectionColor",
-      "selectionInactiveBackground": "tableSelectedColor",
+      "selectionInactiveBackground": "treeInactiveSelectionColor",
+      "selectionInactiveForeground": "selectionForegroundColor",
       "hash": "secondBorderColor"
     },
 
@@ -668,7 +692,7 @@
       },
 
       "HgLog": {
-        "closedBranchIconColor": "disabledColor",
+        "closedBranchIconColor": "disabledForegroundColor",
         "localTagIconColor": "textColor",
         "mqTagIconColor": "textColor",
         "tagIconColor": "textColor",
@@ -733,19 +757,10 @@
       "Objects.YellowDark": "#000000",
 
       "Checkbox.Background.Default": "#FAFAFA",
-      "Checkbox.Background.Default.Dark": "#141414",
       "Checkbox.Background.Disabled": "#727272",
-      "Checkbox.Background.Disabled.Dark": "#222222",
 
       "Checkbox.Border.Disabled": "#222222",
-      "Checkbox.Border.Disabled.Dark": "#222222",
-      "Checkbox.Border.Default": "#343434",
-      "Checkbox.Border.Default.Dark": "#343434",
-
-      "Checkbox.Focus.Thin.Default": "#141414",
-      "Checkbox.Focus.Thin.Default.Dark": "#141414",
-      "Checkbox.Focus.Wide.Default": "#141414",
-      "Checkbox.Focus.Wide.Default.Dark": "#141414"
+      "Checkbox.Border.Default": "#343434"
     }
   }
 }
