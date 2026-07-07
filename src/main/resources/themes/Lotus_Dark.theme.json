@@ -22,7 +22,8 @@
     "notificationsColor": "#111111",
     "accentColor": "#670000",
     "excludedColor": "#3e1818",
-    "selectionTransparentBackgroundColor": "#191919"
+    "selectionTransparentBackgroundColor": "#191919",
+    "treeInactiveSelectionColor": "#606060"
   },
 
   "ui": {
@@ -634,7 +635,8 @@
       "background": "contrastColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "treeSelectionColor",
-      "selectionInactiveBackground": "tableSelectedColor",
+      "selectionInactiveBackground": "treeInactiveSelectionColor",
+      "selectionInactiveForeground": "selectionForegroundColor",
       "hash": "secondBorderColor"
     },
 
