@@ -749,19 +749,10 @@
   "icons": {
     "ColorPalette": {
       "Checkbox.Background.Default": "#141414",
-      "Checkbox.Background.Default.Dark": "#141414",
       "Checkbox.Background.Disabled": "#343434",
-      "Checkbox.Background.Disabled.Dark": "#343434",
 
       "Checkbox.Border.Disabled": "#343434",
-      "Checkbox.Border.Disabled.Dark": "#343434",
-      "Checkbox.Border.Default": "#343434",
-      "Checkbox.Border.Default.Dark": "#343434",
-
-      "Checkbox.Focus.Thin.Default": "#141414",
-      "Checkbox.Focus.Thin.Default.Dark": "#141414",
-      "Checkbox.Focus.Wide.Default": "#141414",
-      "Checkbox.Focus.Wide.Default.Dark": "#141414"
+      "Checkbox.Border.Default": "#343434"
     }
   }
 }
