@@ -156,6 +156,9 @@ Temporary Items
 .gradle
 build/
 
+# IntelliJ Platform Gradle Plugin cache
+.intellijPlatform
+
 # Ignore Gradle GUI config
 gradle-app.setting
 
