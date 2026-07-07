@@ -3,6 +3,7 @@
   "dark": false,
   "author": "blai30",
   "editorScheme": "/colors/Lotus_Light.xml",
+  "parentTheme": "Islands Light",
 
   "colors": {
     "backgroundColor": "#fafafa",
@@ -23,7 +24,8 @@
     "accentColor": "#de67bb",
     "excludedColor": "#eae8e8",
     "selectionTransparentBackgroundColor": "#aaaaaa",
-    "treeInactiveSelectionColor": "#898989"
+    "treeInactiveSelectionColor": "#898989",
+    "mainWindowColor": "#E2E2E2"
   },
 
   "ui": {
@@ -182,7 +184,10 @@
       "background": "backgroundColor",
       "borderColor": "secondaryBackgroundColor",
       "inactiveColoredFileBackground": "backgroundColor",
-      "underlinedTabBackground": "tableSelectedColor"
+      "underlinedTabBackground": "tableSelectedColor",
+      "underlinedBorderColor": "accentColor",
+      "inactiveUnderlinedTabBorderColor": "secondBorderColor",
+      "inactiveUnderlinedTabBackground": "backgroundColor"
     },
 
     "FileColor": {
@@ -221,6 +226,10 @@
       "borderColor": "backgroundColor"
     },
 
+    "Island": {
+      "borderColor": "backgroundColor"
+    },
+
     "Label": {
       "foreground": "foregroundColor",
       "infoForeground": "textColor",
@@ -240,6 +249,14 @@
       "selectionBackground": "selectionBackgroundColor",
       "selectionInactiveForeground": "selectionForegroundColor",
       "selectionInactiveBackground": "selectionTransparentBackgroundColor"
+    },
+
+    "MainToolbar": {
+      "borderColor": "#00000000"
+    },
+
+    "MainWindow": {
+      "background": "mainWindowColor"
     },
 
     "MemoryIndicator": {
@@ -485,7 +502,7 @@
     },
 
     "StatusBar": {
-      "borderColor": "backgroundColor"
+      "borderColor": "#00000000"
     },
 
     "TabbedPane": {
@@ -627,6 +644,10 @@
         "underlinedTabBackground": "backgroundColor",
         "underlinedTabInactiveBackground": "contrastColor",
         "hoverBackground": "highlightColor"
+      },
+
+      "Stripe": {
+        "borderColor": "#00000000"
       }
     },
 
