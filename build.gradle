@@ -1,27 +1,37 @@
 plugins {
-    id "java"
-    id "org.jetbrains.intellij" version "1.0"
+    id "org.jetbrains.intellij.platform" version "2.17.0"
 }
 
 group "com.blai30"
-version "1.12"
+version "2.0.0"
 
 repositories {
     mavenCentral()
+    intellijPlatform {
+        defaultRepositories()
+    }
 }
 
 dependencies {
-    testImplementation "org.junit.jupiter:junit-jupiter-api:5.7.0"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.7.0"
+    intellijPlatform {
+        intellijIdea("2025.3")
+    }
 }
 
-// See https://github.com/JetBrains/gradle-intellij-plugin/
-intellij {
-    version = "2021.1"
-    updateSinceUntilBuild = false
-}
-patchPluginXml {
-    changeNotes = """
+// See https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin.html
+intellijPlatform {
+    pluginConfiguration {
+        ideaVersion {
+            sinceBuild = "232"
+            untilBuild = provider { null }
+        }
+        changeNotes = """
+    <h4>2.0</h4>
+    <ul>
+        <li>Add support for the Islands theme.</li>
+        <li>Fix disabled control text being unreadable in both themes.</li>
+        <li>Fix the selected file being hard to see in the project view when the window is unfocused.</li>
+    </ul>
     <h4>1.12</h4>
     <h5>Lotus Light</h5>
     <ul>
@@ -83,12 +93,10 @@ patchPluginXml {
     <ul>
         <li>Update button colors.</li>
     </ul>
-
     <h4>1.1</h4>
     <ul>
         <li>Add plugin logo.</li>
     </ul>
-
     <h4>1.0</h4>
     <h5>Lotus Dark</h5>
     <ul>
@@ -98,9 +106,6 @@ patchPluginXml {
     <ul>
         <li>Initial release.</li>
     </ul>
-    ]]>
-      """
-}
-test {
-    useJUnitPlatform()
+        """
+    }
 }
