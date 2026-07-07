@@ -13,6 +13,7 @@
     "buttonColor": "#f3f4f5",
     "secondaryBackgroundColor": "#fafafa",
     "disabledColor": "#d2d4d5",
+    "disabledForegroundColor": "#6F6F6F",
     "contrastColor": "#f4f4f4",
     "tableSelectedColor": "#e7e7e8",
     "secondBorderColor": "#d3e1e8",
@@ -86,7 +87,7 @@
     "CheckBox": {
       "foreground": "foregroundColor",
       "background": "backgroundColor",
-      "disabledText": "disabledColor",
+      "disabledText": "disabledForegroundColor",
       "select": "selectionForegroundColor"
     },
 
@@ -95,7 +96,7 @@
       "background": "backgroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "selectionBackgroundColor",
-      "disabledForeground": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
       "disabledBackground": "backgroundColor",
       "acceleratorForeground": "textColor",
       "acceleratorSelectionForeground": "textColor"
@@ -109,14 +110,14 @@
     "ComboBox": {
       "foreground": "foregroundColor",
       "background": "backgroundColor",
-      "disabledForeground": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
       "selectionForeground": "foregroundColor",
       "selectionBackground": "tableSelectedColor",
       "nonEditableBackground": "backgroundColor",
       "ArrowButton": {
         "background": "buttonColor",
         "iconColor": "foregroundColor",
-        "disabledIconColor": "disabledColor",
+        "disabledIconColor": "disabledForegroundColor",
         "nonEditableBackground": "backgroundColor"
       }
     },
@@ -194,7 +195,7 @@
       "background": "backgroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "tableSelectedColor",
-      "inactiveForeground": "disabledColor"
+      "inactiveForeground": "disabledForegroundColor"
     },
 
     "Group": {
@@ -223,8 +224,8 @@
       "foreground": "foregroundColor",
       "infoForeground": "textColor",
       "selectedForeground": "selectionForegroundColor",
-      "disabledForeground": "disabledColor",
-      "disabledText": "disabledColor"
+      "disabledForeground": "disabledForegroundColor",
+      "disabledText": "disabledForegroundColor"
     },
 
     "Link": {
@@ -249,7 +250,7 @@
       "foreground": "foregroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "selectionBackgroundColor",
-      "disabledForeground": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
       "acceleratorForeground": "textColor",
       "acceleratorSelectionForeground": "selectionForegroundColor",
       "borderColor": "secondaryBackgroundColor",
@@ -258,7 +259,7 @@
 
     "MenuBar": {
       "foreground": "foregroundColor",
-      "disabledForeground": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
       "disabledBackground": "backgroundColor",
       "borderColor": "backgroundColor",
       "highlight": "backgroundColor",
@@ -267,7 +268,7 @@
 
     "MenuItem": {
       "foreground": "foregroundColor",
-      "disabledForeground": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "selectionBackgroundColor",
       "acceleratorForeground": "textColor"
@@ -309,7 +310,7 @@
       "foreground": "foregroundColor",
       "background": "secondaryBackgroundColor",
       "borderColor": "tableSelectedColor",
-      "disabledForeground": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
       "infoForeground": "textColor",
       "currentOverloadBackground": "highlightColor",
       "lineSeparatorColor": "tableSelectedColor"
@@ -320,11 +321,11 @@
       "background": "backgroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "tableSelectedColor",
-      "inactiveForeground": "disabledColor"
+      "inactiveForeground": "disabledForegroundColor"
     },
 
     "Plugins": {
-      "disabledForeground": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
       "lightSelectionBackground": "selectionBackgroundColor",
       "tagBackground": "highlightColor",
       "eapTagBackground": "highlightColor",
@@ -339,7 +340,7 @@
         "installForeground": "foregroundColor",
         "installBackground": "buttonColor",
         "installBorderColor":"buttonColor",
-        "installFillForeground": "disabledColor",
+        "installFillForeground": "disabledForegroundColor",
         "installFillBackground": "buttonColor",
         "installFocusedBackground": "highlightColor",
         "updateForeground":"foregroundColor",
@@ -395,13 +396,13 @@
     "RadioButton": {
       "foreground": "foregroundColor",
       "background": "backgroundColor",
-      "disabledText": "disabledColor"
+      "disabledText": "disabledForegroundColor"
     },
 
     "RadioButtonMenuItem": {
       "foreground": "foregroundColor",
       "selectionBackground": "selectionBackgroundColor",
-      "disabledForeground": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
       "acceleratorForeground": "textColor",
       "acceleratorSelectionForeground": "textColor"
     },
@@ -431,7 +432,7 @@
       "SearchField": {
         "background": "contrastColor",
         "borderColor": "backgroundColor",
-        "infoForeground": "disabledColor"
+        "infoForeground": "disabledForegroundColor"
       },
 
       "Tab": {
@@ -489,8 +490,8 @@
     "TabbedPane": {
       "foreground": "foregroundColor",
       "background": "backgroundColor",
-      "disabledForeground": "disabledColor",
-      "disabledUnderlineColor": "disabledColor",
+      "disabledForeground": "disabledForegroundColor",
+      "disabledUnderlineColor": "disabledForegroundColor",
       "hoverColor": "highlightColor",
       "focusColor": "tableSelectedColor",
       "contentAreaColor": "highlightColor"
@@ -526,7 +527,7 @@
     "TextArea": {
       "foreground": "foregroundColor",
       "background": "secondaryBackgroundColor",
-      "inactiveForeground": "disabledColor",
+      "inactiveForeground": "disabledForegroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "tableSelectedColor"
     },
@@ -537,7 +538,7 @@
     "TextField": {
       "foreground": "foregroundColor",
       "background": "backgroundColor",
-      "inactiveForeground": "disabledColor",
+      "inactiveForeground": "disabledForegroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "tableSelectedColor"
     },
@@ -545,7 +546,7 @@
     "TextPane": {
       "foreground": "foregroundColor",
       "background": "backgroundColor",
-      "inactiveForeground": "disabledColor",
+      "inactiveForeground": "disabledForegroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "tableSelectedColor"
     },
@@ -571,7 +572,7 @@
       "offBackground": "foregroundColor",
       "buttonColor":  "buttonColor",
       "borderColor": "buttonColor",
-      "disabledText": "disabledColor"
+      "disabledText": "disabledForegroundColor"
     },
 
     "Toolbar": {
@@ -668,7 +669,7 @@
       },
 
       "HgLog": {
-        "closedBranchIconColor": "disabledColor",
+        "closedBranchIconColor": "disabledForegroundColor",
         "localTagIconColor": "textColor",
         "mqTagIconColor": "textColor",
         "tagIconColor": "textColor",
