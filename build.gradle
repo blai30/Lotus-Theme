@@ -3,7 +3,7 @@ plugins {
 }
 
 group "com.blai30"
-version "2.0.0"
+version "2.0.1"
 
 repositories {
     mavenCentral()
@@ -26,6 +26,22 @@ intellijPlatform {
             untilBuild = provider { null }
         }
         changeNotes = """
+    <h4>2.0.1</h4>
+    <ul>
+        <li>Fix Islands theme background inconsistency causing visible seams around the tool window stripe, main toolbar, and status bar.</li>
+    </ul>
+    <h5>Lotus Dark</h5>
+    <ul>
+        <li>Darken the main window background so it blends better with the Islands theme.</li>
+        <li>Darken the editor background and tune tree view selection colors for better contrast.</li>
+        <li>Fix an abnormally bright unfocused title bar and disabled dropdown backgrounds.</li>
+    </ul>
+    <h5>Lotus Light</h5>
+    <ul>
+        <li>Lighten the tree view selection background for both focused and unfocused states.</li>
+        <li>Darken the modified file text color in the project view for better contrast.</li>
+        <li>Fix an abnormally bright unfocused title bar and disabled dropdown backgrounds.</li>
+    </ul>
     <h4>2.0</h4>
     <ul>
         <li>Add support for the Islands theme.</li>

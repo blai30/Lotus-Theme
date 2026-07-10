@@ -13,18 +13,19 @@
     "selectionForegroundColor": "#4e3a4c",
     "buttonColor": "#f3f4f5",
     "secondaryBackgroundColor": "#fafafa",
-    "disabledColor": "#d2d4d5",
+    "disabledColor": "#e2e3e4",
     "disabledForegroundColor": "#6F6F6F",
     "contrastColor": "#f4f4f4",
     "tableSelectedColor": "#e7e7e8",
     "secondBorderColor": "#d3e1e8",
     "highlightColor": "#e7e7e8",
     "treeSelectionColor": "#ffb6f8",
+    "treeSelectionBackgroundColor": "#ffe0fb",
     "notificationsColor": "#eae8e8",
     "accentColor": "#de67bb",
     "excludedColor": "#eae8e8",
     "selectionTransparentBackgroundColor": "#aaaaaa",
-    "treeInactiveSelectionColor": "#898989",
+    "treeInactiveSelectionColor": "#dedede",
     "mainWindowColor": "#E2E2E2"
   },
 
@@ -252,6 +253,7 @@
     },
 
     "MainToolbar": {
+      "background": "mainWindowColor",
       "borderColor": "#00000000"
     },
 
@@ -502,6 +504,7 @@
     },
 
     "StatusBar": {
+      "background": "mainWindowColor",
       "borderColor": "#00000000"
     },
 
@@ -647,6 +650,7 @@
       },
 
       "Stripe": {
+        "background": "mainWindowColor",
         "borderColor": "#00000000"
       }
     },
@@ -655,7 +659,7 @@
       "foreground": "foregroundColor",
       "background": "contrastColor",
       "selectionForeground": "selectionForegroundColor",
-      "selectionBackground": "treeSelectionColor",
+      "selectionBackground": "treeSelectionBackgroundColor",
       "selectionInactiveBackground": "treeInactiveSelectionColor",
       "selectionInactiveForeground": "selectionForegroundColor",
       "hash": "secondBorderColor"

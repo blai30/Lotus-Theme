@@ -13,7 +13,7 @@
     "selectionForegroundColor": "#D7D7D7",
     "buttonColor": "#1C1C1C",
     "secondaryBackgroundColor": "#141414",
-    "disabledColor": "#5A5A5A",
+    "disabledColor": "#333333",
     "disabledForegroundColor": "#828282",
     "contrastColor": "#101010",
     "tableSelectedColor": "#262626",
@@ -24,8 +24,8 @@
     "accentColor": "#670000",
     "excludedColor": "#3e1818",
     "selectionTransparentBackgroundColor": "#191919",
-    "treeInactiveSelectionColor": "#606060",
-    "mainWindowColor": "#262626"
+    "treeInactiveSelectionColor": "#383838",
+    "mainWindowColor": "#1A1A1A"
   },
 
   "ui": {
@@ -252,6 +252,7 @@
     },
 
     "MainToolbar": {
+      "background": "mainWindowColor",
       "borderColor": "#00000000"
     },
 
@@ -502,6 +503,7 @@
     },
 
     "StatusBar": {
+      "background": "mainWindowColor",
       "borderColor": "#00000000"
     },
 
@@ -647,6 +649,7 @@
       },
 
       "Stripe": {
+        "background": "mainWindowColor",
         "borderColor": "#00000000"
       }
     },
