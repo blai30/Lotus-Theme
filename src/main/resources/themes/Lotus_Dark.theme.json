@@ -7,7 +7,7 @@
 
   "colors": {
     "backgroundColor": "#141414",
-    "foregroundColor": "#b0b0b0",
+    "foregroundColor": "#B0B0B0",
     "textColor": "#757575",
     "selectionBackgroundColor": "#323232",
     "selectionForegroundColor": "#D7D7D7",
@@ -22,7 +22,6 @@
     "treeSelectionColor": "#292929",
     "notificationsColor": "#111111",
     "accentColor": "#670000",
-    "excludedColor": "#3e1818",
     "selectionTransparentBackgroundColor": "#191919",
     "treeInactiveSelectionColor": "#383838",
     "mainWindowColor": "#1A1A1A"
@@ -77,7 +76,7 @@
       "startBackground": "buttonColor",
       "endBackground": "buttonColor",
       "shadowColor": "backgroundColor",
-      "arc": "0",
+      "arc": 0,
 
       "default": {
         "foreground": "selectionForegroundColor",
@@ -133,7 +132,7 @@
       "border": "secondBorderColor"
     },
 
-    "CompletionPopup":  {
+    "CompletionPopup": {
       "foreground": "foregroundColor",
       "selectionBackground": "selectionBackgroundColor",
       "selectionInactiveBackground": "highlightColor"
@@ -188,12 +187,6 @@
       "underlinedBorderColor": "accentColor",
       "inactiveUnderlinedTabBorderColor": "secondBorderColor",
       "inactiveUnderlinedTabBackground": "backgroundColor"
-    },
-
-    "FileColor": {
-    },
-
-    "FlameGraph": {
     },
 
     "FormattedTextField": {
@@ -358,11 +351,10 @@
       "Button": {
         "installForeground": "foregroundColor",
         "installBackground": "buttonColor",
-        "installBorderColor":"buttonColor",
+        "installBorderColor": "buttonColor",
         "installFillForeground": "disabledForegroundColor",
         "installFillBackground": "buttonColor",
-        "installFocusedBackground": "highlightColor",
-        "updateForeground":"foregroundColor",
+        "updateForeground": "foregroundColor",
         "updateBackground": "buttonColor",
         "updateBorderColor": "buttonColor"
       },
@@ -404,9 +396,6 @@
       "translucentBackground": "backgroundColor"
     },
 
-    "PopupMenuSeparator": {
-    },
-
     "ProgressBar": {
       "trackColor": "highlightColor",
       "selectionBackground": "highlightColor"
@@ -429,9 +418,6 @@
     "ScrollBar": {
       "background": "backgroundColor",
       "thumb": "contrastColor"
-    },
-
-    "ScrollPane": {
     },
 
     "SearchEverywhere": {
@@ -464,14 +450,8 @@
       "errorBackground": "notificationsColor"
     },
 
-    "SearchMatch": {
-    },
-
     "Separator": {
       "separatorColor": "selectionBackgroundColor"
-    },
-
-    "SettingsTree": {
     },
 
     "SidePanel": {
@@ -497,9 +477,6 @@
 
     "SplitPane": {
       "highlight": "backgroundColor"
-    },
-
-    "SplitPaneDivider": {
     },
 
     "StatusBar": {
@@ -533,7 +510,7 @@
 
       "lightSelectionForeground": "selectionForegroundColor",
       "lightSelectionInactiveForeground": "textColor",
-      "lightSelectionInactiveBackground":"secondaryBackgroundColor"
+      "lightSelectionInactiveBackground": "secondaryBackgroundColor"
     },
 
     "TableHeader": {
@@ -550,9 +527,6 @@
       "inactiveForeground": "disabledForegroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "tableSelectedColor"
-    },
-
-    "TextComponent": {
     },
 
     "TextField": {
@@ -590,7 +564,7 @@
       "foreground": "foregroundColor",
       "offForeground": "foregroundColor",
       "offBackground": "foregroundColor",
-      "buttonColor":  "buttonColor",
+      "buttonColor": "buttonColor",
       "borderColor": "buttonColor",
       "disabledText": "disabledForegroundColor"
     },
@@ -660,7 +634,6 @@
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "treeSelectionColor",
       "selectionInactiveBackground": "treeInactiveSelectionColor",
-      "selectionInactiveForeground": "selectionForegroundColor",
       "hash": "secondBorderColor"
     },
 
@@ -714,9 +687,6 @@
         "foreground": "selectionForegroundColor",
         "backgroundBase": "highlightColor"
       }
-    },
-
-    "Viewport": {
     },
 
     "WelcomeScreen": {

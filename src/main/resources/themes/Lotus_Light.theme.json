@@ -6,26 +6,25 @@
   "parentTheme": "Islands Light",
 
   "colors": {
-    "backgroundColor": "#fafafa",
-    "foregroundColor": "#563d58",
-    "textColor": "#b094af",
-    "selectionBackgroundColor": "#ffd0fb",
-    "selectionForegroundColor": "#4e3a4c",
-    "buttonColor": "#f3f4f5",
-    "secondaryBackgroundColor": "#fafafa",
-    "disabledColor": "#e2e3e4",
+    "backgroundColor": "#FAFAFA",
+    "foregroundColor": "#563D58",
+    "textColor": "#B094AF",
+    "selectionBackgroundColor": "#FFD0FB",
+    "selectionForegroundColor": "#4E3A4C",
+    "buttonColor": "#F3F4F5",
+    "secondaryBackgroundColor": "#FAFAFA",
+    "disabledColor": "#E2E3E4",
     "disabledForegroundColor": "#6F6F6F",
-    "contrastColor": "#f4f4f4",
-    "tableSelectedColor": "#e7e7e8",
-    "secondBorderColor": "#d3e1e8",
-    "highlightColor": "#e7e7e8",
-    "treeSelectionColor": "#ffb6f8",
-    "treeSelectionBackgroundColor": "#ffe0fb",
-    "notificationsColor": "#eae8e8",
-    "accentColor": "#de67bb",
-    "excludedColor": "#eae8e8",
-    "selectionTransparentBackgroundColor": "#aaaaaa",
-    "treeInactiveSelectionColor": "#dedede",
+    "contrastColor": "#F4F4F4",
+    "tableSelectedColor": "#E7E7E8",
+    "secondBorderColor": "#D3E1E8",
+    "highlightColor": "#E7E7E8",
+    "treeSelectionColor": "#FFB6F8",
+    "treeSelectionBackgroundColor": "#FFE0FB",
+    "notificationsColor": "#EAE8E8",
+    "accentColor": "#DE67BB",
+    "selectionTransparentBackgroundColor": "#AAAAAA",
+    "treeInactiveSelectionColor": "#DEDEDE",
     "mainWindowColor": "#E2E2E2"
   },
 
@@ -78,7 +77,7 @@
       "startBackground": "secondaryBackgroundColor",
       "endBackground": "secondaryBackgroundColor",
       "shadowColor": "backgroundColor",
-      "arc": "0",
+      "arc": 0,
 
       "default": {
         "foreground": "selectionForegroundColor",
@@ -134,7 +133,7 @@
       "border": "secondBorderColor"
     },
 
-    "CompletionPopup":  {
+    "CompletionPopup": {
       "foreground": "foregroundColor",
       "selectionBackground": "selectionBackgroundColor",
       "selectionInactiveBackground": "highlightColor"
@@ -189,12 +188,6 @@
       "underlinedBorderColor": "accentColor",
       "inactiveUnderlinedTabBorderColor": "secondBorderColor",
       "inactiveUnderlinedTabBackground": "backgroundColor"
-    },
-
-    "FileColor": {
-    },
-
-    "FlameGraph": {
     },
 
     "FormattedTextField": {
@@ -359,11 +352,10 @@
       "Button": {
         "installForeground": "foregroundColor",
         "installBackground": "buttonColor",
-        "installBorderColor":"buttonColor",
+        "installBorderColor": "buttonColor",
         "installFillForeground": "disabledForegroundColor",
         "installFillBackground": "buttonColor",
-        "installFocusedBackground": "highlightColor",
-        "updateForeground":"foregroundColor",
+        "updateForeground": "foregroundColor",
         "updateBackground": "buttonColor",
         "updateBorderColor": "buttonColor"
       },
@@ -405,9 +397,6 @@
       "translucentBackground": "backgroundColor"
     },
 
-    "PopupMenuSeparator": {
-    },
-
     "ProgressBar": {
       "trackColor": "highlightColor",
       "selectionBackground": "highlightColor"
@@ -430,9 +419,6 @@
     "ScrollBar": {
       "background": "backgroundColor",
       "thumb": "contrastColor"
-    },
-
-    "ScrollPane": {
     },
 
     "SearchEverywhere": {
@@ -465,14 +451,8 @@
       "errorBackground": "notificationsColor"
     },
 
-    "SearchMatch": {
-    },
-
     "Separator": {
       "separatorColor": "secondaryBackgroundColor"
-    },
-
-    "SettingsTree": {
     },
 
     "SidePanel": {
@@ -498,9 +478,6 @@
 
     "SplitPane": {
       "highlight": "backgroundColor"
-    },
-
-    "SplitPaneDivider": {
     },
 
     "StatusBar": {
@@ -534,7 +511,7 @@
 
       "lightSelectionForeground": "selectionForegroundColor",
       "lightSelectionInactiveForeground": "textColor",
-      "lightSelectionInactiveBackground":"secondaryBackgroundColor"
+      "lightSelectionInactiveBackground": "secondaryBackgroundColor"
     },
 
     "TableHeader": {
@@ -551,9 +528,6 @@
       "inactiveForeground": "disabledForegroundColor",
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "tableSelectedColor"
-    },
-
-    "TextComponent": {
     },
 
     "TextField": {
@@ -591,7 +565,7 @@
       "foreground": "foregroundColor",
       "offForeground": "foregroundColor",
       "offBackground": "foregroundColor",
-      "buttonColor":  "buttonColor",
+      "buttonColor": "buttonColor",
       "borderColor": "buttonColor",
       "disabledText": "disabledForegroundColor"
     },
@@ -661,7 +635,6 @@
       "selectionForeground": "selectionForegroundColor",
       "selectionBackground": "treeSelectionBackgroundColor",
       "selectionInactiveBackground": "treeInactiveSelectionColor",
-      "selectionInactiveForeground": "selectionForegroundColor",
       "hash": "secondBorderColor"
     },
 
@@ -717,9 +690,6 @@
       }
     },
 
-    "Viewport": {
-    },
-
     "WelcomeScreen": {
       "background": "contrastColor",
       "borderColor": "backgroundColor",
@@ -754,7 +724,6 @@
     "ColorPalette": {
       "Actions.Grey": "#000000",
       "Actions.GreyInline": "#000000",
-      "Actions.GreyInline.Dark": "#000000",
       "Actions.Yellow": "#000000",
       "Objects.Grey": "#000000",
       "Objects.Yellow": "#000000",
