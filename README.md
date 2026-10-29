@@ -58,6 +58,7 @@ The project is a resource-only plugin built with the [IntelliJ Platform Gradle P
 2. Push to `main`. The Build workflow verifies the plugin and refreshes a draft release named after the version.
 3. Publish the draft under **Releases**. The Release workflow publishes to JetBrains Marketplace, attaches the plugin zip, and opens a pull request that moves the notes under the released version.
 4. Merge that pull request.
+5. Bump `version` in `gradle.properties` for the next release.
 
 One-time setup:
 

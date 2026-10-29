@@ -76,6 +76,8 @@ abstract class VerifyThemesTask : DefaultTask() {
                     is Map<*, *> -> node.forEach { (key, value) -> checkReferences(value, "$path.$key") }
                     is String -> if (identifier.matches(node) && node !in colors.keys) {
                         problems += "${themeFile.name}: $path references undefined color '$node'"
+                    } else if (node.startsWith("#") && !hexColor.matches(node)) {
+                        problems += "${themeFile.name}: $path has invalid color '$node'"
                     }
                 }
             }
@@ -92,7 +94,7 @@ abstract class VerifyThemesTask : DefaultTask() {
     }
 }
 
-val verifyThemes by tasks.registering(VerifyThemesTask::class) {
+val verifyThemes = tasks.register<VerifyThemesTask>("verifyThemes") {
     group = "verification"
     description = "Checks that theme JSON and color scheme XML files parse and that every color reference resolves."
     resourcesDirectory = layout.projectDirectory.dir("src/main/resources")
