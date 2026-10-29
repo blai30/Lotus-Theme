@@ -1,41 +1,22 @@
+<!-- Plugin Configuration File: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.blai30.lotus.theme</id>
     <name>Lotus Theme</name>
-    <vendor url="https://www.bhlai.com">blai30</vendor>
+    <vendor url="https://www.bhlai.com">Brian Lai</vendor>
 
     <description><![CDATA[
-    <h1>Lotus Theme Plugin</h1>
-
-    <img src="https://raw.githubusercontent.com/blai30/Lotus-Theme/main/src/main/resources/screenshots/dark.png" alt="dark" width="400">
-    <br />
-    <img src="https://raw.githubusercontent.com/blai30/Lotus-Theme/main/src/main/resources/screenshots/light.png" alt="light" width="400">
-    <br />
-
-    <h2>A theme pack with pastel font colors for the JetBrains platform.</h2>
-    <hr />
-
-    Includes a dark theme and light theme.
-    <ul>
-        <li>Lotus Dark</li>
-        <li>Lotus Light</li>
-    </ul>
-    <hr />
-    <br />
-
-    <h3>This theme includes colors for Rainbow Brackets.</h3>
+        <p>Soft pastel syntax colors on calm dark and light backgrounds, in two themes:</p>
+        <ul>
+            <li><b>Lotus Dark</b></li>
+            <li><b>Lotus Light</b></li>
+        </ul>
+        <p>Both themes are built on the Islands UI and include editor colors for <a href="https://plugins.jetbrains.com/plugin/10080-rainbow-brackets">Rainbow Brackets</a>.</p>
     ]]></description>
 
-    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
-         on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
         <themeProvider id="c3f84cf4-72fb-49ac-bd03-9f47a41115a4" path="/themes/Lotus_Dark.theme.json"/>
         <themeProvider id="40b6d5e5-c8b1-4d60-bcb1-c3a747c1d46b" path="/themes/Lotus_Light.theme.json"/>
     </extensions>
-
-    <actions>
-        <!-- Add your actions here -->
-    </actions>
 </idea-plugin>
