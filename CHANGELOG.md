@@ -2,7 +2,7 @@
 
 # Lotus Theme Changelog
 
-## [Unreleased]
+## Unreleased
 
 ### Changed
 
@@ -13,7 +13,7 @@
 
 - Remove color scheme entries for the discontinued Markdown Navigator plugin.
 
-## [2.0.1] - 2026-07-10
+## 2.0.1 - 2026-07-10
 
 ### Fixed
 
@@ -28,7 +28,7 @@
 - Lotus Light: Lighten the tree view selection background for both focused and unfocused states.
 - Lotus Light: Darken the modified file text color in the project view for better contrast.
 
-## [2.0.0] - 2026-07-07
+## 2.0.0 - 2026-07-07
 
 ### Added
 
@@ -39,79 +39,79 @@
 - Fix disabled control text being unreadable in both themes.
 - Fix the selected file being hard to see in the project view when the window is unfocused.
 
-## [1.12] - 2024-04-30
+## 1.12 - 2024-04-30
 
 ### Changed
 
 - Lotus Light: Adjust icon colors.
 
-## [1.11] - 2024-04-29
+## 1.11 - 2024-04-29
 
 ### Changed
 
 - Lotus Light: Update main toolbar color.
 
-## [1.10] - 2022-06-17
+## 1.10 - 2022-06-17
 
 ### Changed
 
 - Update selection background color in both themes.
 
-## [1.9] - 2022-06-13
+## 1.9 - 2022-06-13
 
 ### Fixed
 
 - Lotus Light: Fix secondary background color.
 
-## [1.8]
+## 1.8
 
 ### Fixed
 
 - Lotus Light: Fix colors for inline quick documentation.
 
-## [1.7] - 2021-07-04
+## 1.7 - 2021-07-04
 
 ### Changed
 
 - Lotus Dark: Update colors for auto-complete and various backgrounds.
 
-## [1.6] - 2021-06-25
+## 1.6 - 2021-06-25
 
 ### Fixed
 
 - Lotus Light: Fix dark and selection colors.
 
-## [1.5] - 2021-06-05
+## 1.5 - 2021-06-05
 
 ### Changed
 
 - Remove the upper bound on supported IDE versions.
 
-## [1.4] - 2021-04-13
+## 1.4 - 2021-04-13
 
 ### Changed
 
 - Lotus Dark: Update auto-complete window colors.
 
-## [1.3] - 2021-02-02
+## 1.3 - 2021-02-02
 
 ### Removed
 
 - Remove the Rainbow Brackets dependency. Rainbow Brackets colors are still included.
 
-## [1.2] - 2020-05-25
+## 1.2 - 2020-05-25
 
 ### Changed
 
 - Update button colors in both themes.
 
-## [1.1]
+## 1.1
 
 ### Added
 
 - Add plugin logo.
 
-## [1.0]
+## 1.0
 
 ### Added
 
