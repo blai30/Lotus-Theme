@@ -1,22 +1,70 @@
 <div align="center">
   <a href="https://plugins.jetbrains.com/plugin/14369-lotus-theme">
-    <img src="https://raw.githubusercontent.com/blai30/Lotus-Theme/main/src/main/resources/META-INF/pluginIcon.svg" width="320" height="320" alt="logo">
+    <img src="src/main/resources/META-INF/pluginIcon.svg" width="160" height="160" alt="Lotus Theme logo">
   </a>
+
+  <h1>Lotus Theme</h1>
+
+  <p>Soft pastel syntax colors on calm dark and light backgrounds for JetBrains IDEs.</p>
+
+  <a href="https://plugins.jetbrains.com/plugin/14369-lotus-theme"><img src="https://img.shields.io/jetbrains/plugin/v/14369-lotus-theme" alt="Version"></a>
+  <a href="https://plugins.jetbrains.com/plugin/14369-lotus-theme"><img src="https://img.shields.io/jetbrains/plugin/d/14369-lotus-theme" alt="Downloads"></a>
+  <a href="https://plugins.jetbrains.com/plugin/14369-lotus-theme/reviews"><img src="https://img.shields.io/jetbrains/plugin/r/rating/14369-lotus-theme" alt="Rating"></a>
+  <a href="https://github.com/blai30/Lotus-Theme/actions/workflows/build.yml"><img src="https://github.com/blai30/Lotus-Theme/actions/workflows/build.yml/badge.svg" alt="Build"></a>
 </div>
 
-# Lotus Theme
+## Themes
 
-<img src="https://github.com/blai30/Lotus-Theme/blob/main/src/main/resources/screenshots/dark.png?raw=true" alt="dark">
-<img src="https://github.com/blai30/Lotus-Theme/blob/main/src/main/resources/screenshots/light.png?raw=true" alt="light">
+### Lotus Dark
 
-![Downloads](https://img.shields.io/jetbrains/plugin/d/14369-lotus-theme)
-![Rating](https://img.shields.io/jetbrains/plugin/r/rating/14369-lotus-theme)
-![Version](https://img.shields.io/jetbrains/plugin/v/14369-lotus-theme)
+![Lotus Dark](assets/screenshots/dark.png)
 
-## A theme pack with pastel font colors for the JetBrains platform.
+### Lotus Light
 
-Includes a dark theme and light theme.
-* Lotus Dark
-* Lotus Light
+![Lotus Light](assets/screenshots/light.png)
 
-### This theme contains colors for [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets).
+Both themes are built on the Islands UI and include editor colors for [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets).
+
+## Installation
+
+Requires a JetBrains IDE version 2025.3 or newer.
+
+1. Open **Settings | Plugins | Marketplace** and search for **Lotus Theme**.
+2. Click **Install**.
+3. Pick **Lotus Dark** or **Lotus Light** under **Settings | Appearance & Behavior | Appearance | Theme**.
+
+## Development
+
+The project is a resource-only plugin built with the [IntelliJ Platform Gradle Plugin](https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin.html). Gradle provisions the required JDK automatically.
+
+| File | Purpose |
+|---|---|
+| `src/main/resources/themes/*.theme.json` | UI themes |
+| `src/main/resources/colors/*.xml` | Editor color schemes |
+| `src/main/resources/META-INF/plugin.xml` | Plugin descriptor and Marketplace description |
+| `gradle.properties` | Plugin version, oldest supported IDE build, IDE version to build against |
+| `CHANGELOG.md` | Release notes, rendered into the plugin's change notes |
+
+| Command | Description |
+|---|---|
+| `./gradlew runIde` | Launch a sandbox IDE with the plugin installed |
+| `./gradlew check` | Validate theme JSON and color scheme XML (`verifyThemes`) |
+| `./gradlew verifyPlugin` | Run the IntelliJ Plugin Verifier against supported IDEs |
+| `./gradlew buildPlugin` | Build the plugin zip into `build/distributions` |
+
+## Releasing
+
+1. Add notes under `## Unreleased` in `CHANGELOG.md` and set `version` in `gradle.properties`.
+2. Push to `main`. The Build workflow verifies the plugin and refreshes a draft release named after the version.
+3. Publish the draft under **Releases**. The Release workflow publishes to JetBrains Marketplace, attaches the plugin zip, and opens a pull request that moves the notes under the released version.
+4. Merge that pull request.
+
+One-time setup:
+
+- Add a `PUBLISH_TOKEN` repository secret with a [JetBrains Marketplace token](https://plugins.jetbrains.com/author/me/tokens).
+- Enable **Settings | Actions | General | Allow GitHub Actions to create and approve pull requests**.
+- Optional: add `CERTIFICATE_CHAIN`, `PRIVATE_KEY`, and `PRIVATE_KEY_PASSWORD` secrets to [sign the plugin](https://plugins.jetbrains.com/docs/intellij/plugin-signing.html). Without them, the unsigned plugin is published.
+
+## License
+
+[MIT](LICENSE)
