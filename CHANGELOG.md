@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+## 2.2.2 - 2026-10-30
+
 ### Fixed
 
 - Blue accents and grays in Lotus Dark Rose, Lotus Dark Sky, Lotus Black Rose, and Lotus Black Sky on 2026.2 IDEs
