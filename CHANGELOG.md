@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+## 2.2.0 - 2026-10-30
+
 ### Added
 
 - Add Lotus Dark Rose, Lotus Dark Sky, Lotus Black Rose, and Lotus Black Sky.
