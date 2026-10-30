@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+## 2.2.1 - 2026-10-30
+
 ### Changed
 
 - Update plugin logo with a dark background.
