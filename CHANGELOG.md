@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+## 2.1.0 - 2026-10-30
+
 ### Changed
 
 - Require IDE version 2025.3 or newer. Both themes build on the Islands themes, which earlier versions don't have.
