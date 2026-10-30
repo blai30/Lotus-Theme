@@ -8,6 +8,10 @@
 
 - Require IDE version 2025.3 or newer. Both themes build on the Islands themes, which earlier versions don't have.
 - Color schemes no longer override your editor and console font, font size, line spacing, or ligature settings.
+- Polish the IDE UI in both themes with one Lotus pink accent for selections, checkboxes, links, focus rings, progress bars, default buttons, and the selected tool window button.
+- Popups, menus, and tooltips now stand apart from the editor, and toolbar buttons no longer sit on dark boxes.
+- Project tree file colors and the run/debug controls now use Lotus colors instead of stock browns, greens, and reds.
+- Buttons now use rounded corners to match the rest of the Islands UI.
 
 ### Removed
 
