@@ -5,17 +5,21 @@
     <vendor url="https://www.bhlai.com">Brian Lai</vendor>
 
     <description><![CDATA[
-        <p>Soft pastel syntax colors on calm dark and light backgrounds, in two themes:</p>
+        <p>A modern dark theme with colorful syntax highlighting, built on the Islands UI.</p>
         <ul>
-            <li><b>Lotus Dark</b></li>
-            <li><b>Lotus Light</b></li>
+            <li><b>Lotus Dark Rose</b> and <b>Lotus Dark Sky</b>: dark gray background</li>
+            <li><b>Lotus Black Rose</b> and <b>Lotus Black Sky</b>: pure black background</li>
+            <li><b>Lotus Dark (Classic)</b> and <b>Lotus Light (Classic)</b>: the original Lotus themes</li>
         </ul>
-        <p>Both themes are built on the Islands UI and include editor colors for <a href="https://plugins.jetbrains.com/plugin/10080-rainbow-brackets">Rainbow Brackets</a>.</p>
     ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="lotus-dark-rose" path="/themes/Lotus_Dark_Rose.theme.json"/>
+        <themeProvider id="lotus-dark-sky" path="/themes/Lotus_Dark_Sky.theme.json"/>
+        <themeProvider id="lotus-black-rose" path="/themes/Lotus_Black_Rose.theme.json"/>
+        <themeProvider id="lotus-black-sky" path="/themes/Lotus_Black_Sky.theme.json"/>
         <themeProvider id="c3f84cf4-72fb-49ac-bd03-9f47a41115a4" path="/themes/Lotus_Dark.theme.json"/>
         <themeProvider id="40b6d5e5-c8b1-4d60-bcb1-c3a747c1d46b" path="/themes/Lotus_Light.theme.json"/>
     </extensions>

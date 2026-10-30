@@ -5,7 +5,7 @@
 
   <h1>Lotus Theme</h1>
 
-  <p>Soft pastel syntax colors on calm dark and light backgrounds for JetBrains IDEs.</p>
+  <p>A modern dark theme with colorful syntax highlighting for JetBrains IDEs.</p>
 
   <a href="https://plugins.jetbrains.com/plugin/14369-lotus-theme"><img src="https://img.shields.io/jetbrains/plugin/v/14369-lotus-theme" alt="Version"></a>
   <a href="https://plugins.jetbrains.com/plugin/14369-lotus-theme"><img src="https://img.shields.io/jetbrains/plugin/d/14369-lotus-theme" alt="Downloads"></a>
@@ -15,15 +15,34 @@
 
 ## Themes
 
-### Lotus Dark
+All themes are built on the Islands UI.
 
-![Lotus Dark](assets/screenshots/dark.png)
+| Theme | Background | Accent |
+|---|---|---|
+| Lotus Dark Rose | Dark gray | Rose |
+| Lotus Dark Sky | Dark gray | Sky |
+| Lotus Black Rose | Pure black | Rose |
+| Lotus Black Sky | Pure black | Sky |
+| Lotus Dark (Classic) | Dark gray | Pink |
+| Lotus Light (Classic) | Light | Pink |
 
-### Lotus Light
+The classic themes include editor colors for [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets).
 
-![Lotus Light](assets/screenshots/light.png)
+### Lotus Dark Rose
 
-Both themes are built on the Islands UI and include editor colors for [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets).
+![Lotus Dark Rose](assets/screenshots/dark-rose.png)
+
+### Lotus Black Rose
+
+![Lotus Black Rose](assets/screenshots/black-rose.png)
+
+### Lotus Dark (Classic)
+
+![Lotus Dark (Classic)](assets/screenshots/dark.png)
+
+### Lotus Light (Classic)
+
+![Lotus Light (Classic)](assets/screenshots/light.png)
 
 ## Installation
 
@@ -31,7 +50,7 @@ Requires a JetBrains IDE version 2025.3 or newer.
 
 1. Open **Settings | Plugins | Marketplace** and search for **Lotus Theme**.
 2. Click **Install**.
-3. Pick **Lotus Dark** or **Lotus Light** under **Settings | Appearance & Behavior | Appearance | Theme**.
+3. Pick a Lotus theme under **Settings | Appearance & Behavior | Appearance | Theme**.
 
 ## Development
 

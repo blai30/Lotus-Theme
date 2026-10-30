@@ -1,4 +1,4 @@
-<scheme name="Lotus Dark" version="142" parent_scheme="Darcula">
+<scheme name="Lotus Dark (Classic)" version="142" parent_scheme="Darcula">
     <colors>
         <option name="ADDED_LINES_COLOR" value="a9dc76" />
         <option name="ANNOTATIONS_COLOR" value="fffbf7" />

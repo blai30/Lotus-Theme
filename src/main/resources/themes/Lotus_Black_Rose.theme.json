@@ -1,0 +1,28 @@
+{
+  "name": "Lotus Black Rose",
+  "dark": true,
+  "author": "blai30",
+  "editorScheme": "/colors/Lotus_Black_Rose.xml",
+  "parentTheme": "lotus-dark-rose",
+  "colors": {
+    "neutral50": "#F4F4F5",
+    "neutral100": "#E4E4E7",
+    "neutral200": "#D4D4D8",
+    "neutral300": "#A1A1AA",
+    "neutral400": "#71717A",
+    "neutral500": "#52525B",
+    "neutral600": "#3F3F46",
+    "neutral700": "#27272A",
+    "neutral750": "#1F1F22",
+    "neutral800": "#18181B",
+    "neutral850": "#0C0C0E",
+    "neutral900": "#000000",
+    "neutral950": "#000000",
+    "accentTint": "#0E0105",
+    "fileColorBlue": "#1D2126",
+    "fileColorGreen": "#1C251F",
+    "fileColorOrange": "#26201A",
+    "fileColorRose": "#261F20",
+    "fileColorViolet": "#212026"
+  }
+}

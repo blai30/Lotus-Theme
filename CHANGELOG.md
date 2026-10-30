@@ -4,6 +4,14 @@
 
 ## Unreleased
 
+### Added
+
+- Add Lotus Dark Rose, Lotus Dark Sky, Lotus Black Rose, and Lotus Black Sky.
+
+### Changed
+
+- Rename Lotus Dark and Lotus Light to Lotus Dark (Classic) and Lotus Light (Classic).
+
 ## 2.1.0 - 2026-10-30
 
 ### Changed

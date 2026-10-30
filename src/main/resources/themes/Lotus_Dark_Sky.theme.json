@@ -1,0 +1,21 @@
+{
+  "name": "Lotus Dark Sky",
+  "dark": true,
+  "author": "blai30",
+  "editorScheme": "/colors/Lotus_Dark_Sky.xml",
+  "parentTheme": "lotus-dark-rose",
+  "colors": {
+    "accent50": "#F0F9FF",
+    "accent100": "#E0F2FE",
+    "accent200": "#BAE6FD",
+    "accent300": "#7DD3FC",
+    "accent400": "#38BDF8",
+    "accent500": "#0EA5E9",
+    "accent600": "#0284C7",
+    "accent700": "#0369A1",
+    "accent800": "#075985",
+    "accent900": "#0C4A6E",
+    "accent950": "#082F49",
+    "accentTint": "#151D24"
+  }
+}

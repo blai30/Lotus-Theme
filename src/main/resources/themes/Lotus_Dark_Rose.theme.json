@@ -1,0 +1,330 @@
+{
+  "name": "Lotus Dark Rose",
+  "dark": true,
+  "author": "blai30",
+  "editorScheme": "/colors/Lotus_Dark_Rose.xml",
+  "parentTheme": "Islands Dark",
+
+  "colors": {
+    "accent50": "#FFF1F2",
+    "accent100": "#FFE4E6",
+    "accent200": "#FECDD3",
+    "accent300": "#FDA4AF",
+    "accent400": "#FB7185",
+    "accent500": "#F43F5E",
+    "accent600": "#E11D48",
+    "accent700": "#BE123C",
+    "accent800": "#9F1239",
+    "accent900": "#881337",
+    "accent950": "#4C0519",
+
+    "neutral50": "#FAFAFA",
+    "neutral100": "#F4F4F5",
+    "neutral200": "#E4E4E7",
+    "neutral300": "#D4D4D8",
+    "neutral400": "#A1A1AA",
+    "neutral500": "#71717A",
+    "neutral600": "#52525B",
+    "neutral700": "#3F3F46",
+    "neutral750": "#333338",
+    "neutral800": "#27272A",
+    "neutral850": "#202023",
+    "neutral900": "#18181B",
+    "neutral950": "#09090B",
+
+    "accentTint": "#22141B",
+    "fileColorBlue": "#31353D",
+    "fileColorGreen": "#303936",
+    "fileColorOrange": "#3B3530",
+    "fileColorRose": "#3B3337",
+    "fileColorViolet": "#36353D",
+
+    "ForegroundDefault": "neutral100",
+
+    "PanelBackground": "neutral900",
+    "ToolWindowBackground": "neutral900",
+    "InputBackground": "neutral950",
+    "BackgroundDark": "neutral900",
+    "BackgroundMid": "neutral850",
+    "BackgroundLight": "neutral850",
+    "BackgroundLightest": "neutral750",
+    "AltBackgroundLight": "neutral800",
+    "ComboboxBackground": "neutral950",
+    "ComponentBorder": "neutral600",
+    "BorderDark": "neutral800",
+    "BorderLight": "neutral750",
+    "PopupBackground": "neutral850",
+    "PopupBackgroundLight": "neutral800",
+    "PopupBorder": "neutral700",
+    "TooltipBackground": "neutral800",
+    "TooltipBorder": "neutral700",
+    "HoverBackgroundMid": "neutral800",
+    "HoverBackgroundLight": "neutral700",
+    "SelectionActive": "accent800",
+    "SelectionInactive": "neutral800",
+
+    "Gray0": "#000000",
+    "Gray0.25": "neutral950",
+    "Gray0.5": "neutral900",
+    "Gray0.75": "neutral900",
+    "Gray1": "neutral850",
+    "Gray1.25": "neutral850",
+    "Gray1.5": "neutral800",
+    "Gray2": "neutral800",
+    "Gray2.25": "neutral750",
+    "Gray2.5": "neutral750",
+    "Gray3": "neutral700",
+    "Gray4": "neutral700",
+    "Gray5": "neutral600",
+    "Gray6": "neutral600",
+    "Gray7": "neutral500",
+    "Gray8": "neutral500",
+    "Gray9": "neutral400",
+    "Gray10": "neutral400",
+    "Gray11": "neutral300",
+    "Gray12": "neutral200",
+    "Gray13": "neutral100",
+    "Gray14": "neutral50",
+
+    "Blue1": "accent950",
+    "Blue2": "accent900",
+    "Blue3": "accent800",
+    "Blue4": "accent700",
+    "Blue5": "accent700",
+    "Blue6": "accent600",
+    "Blue7": "accent500",
+    "Blue8": "accent500",
+    "Blue9": "accent400",
+    "Blue10": "accent300",
+    "Blue11": "accent300",
+    "Blue12": "accent200",
+    "Blue13": "accent100"
+  },
+
+  "ui": {
+    "*": {
+      "rowHeight": 24,
+      "rowHeight.compact": 22,
+      "caretForeground": "accent200",
+      "selectionForeground": "accent50",
+      "selectionInactiveForeground": "neutral100",
+      "selectionBackgroundInactive": "SelectionInactive",
+      "selectionBackground.os.default": "SelectionActive",
+      "selectionBackground.os.windows": "SelectionActive",
+      "disabledForeground": "neutral500",
+      "disabledText": "neutral500"
+    },
+
+    "alt": {
+      "ToolWindow.background": "neutral850",
+      "ToolWindow.Header.inactiveBackground": "neutral850",
+      "ToolWindow.Header.borderColor": "neutral750",
+      "Island.borderColor": "neutral850",
+      "Borders.color": "neutral750",
+      "Borders.ContrastBorderColor": "neutral750"
+    },
+
+    "Button": {
+      "shadowColor": "#00000000",
+      "default": {
+        "foreground": "neutral50",
+        "startBackground": "accent700",
+        "endBackground": "accent700",
+        "startBorderColor": "accent700",
+        "endBorderColor": "accent700"
+      }
+    },
+
+    "CombinedDiff": {
+      "BlockBorder.selectedActiveColor": "accent700",
+      "BlockBorder.selectedInactiveColor": "neutral600"
+    },
+
+    "ComboBox": {
+      "ArrowButton.iconColor": "neutral300",
+      "ArrowButton.disabledIconColor": "neutral600"
+    },
+
+    "CompletionPopup": {
+      "selectionBackground": "accent900",
+      "matchForeground": "accent300",
+      "foreground": "neutral300",
+      "Advertiser.foreground": "neutral500"
+    },
+
+    "Component": {
+      "focusedBorderColor": "InputBackground"
+    },
+
+    "DragAndDrop": {
+      "rowBackground": "accentTint",
+      "borderColor": "accent700",
+      "areaBorderColor": "accent700"
+    },
+
+    "Editor": {
+      "SearchField.background": "neutral850",
+      "SearchField.borderColor": "neutral800"
+    },
+
+    "FileColor": {
+      "Blue": "fileColorBlue",
+      "Green": "fileColorGreen",
+      "Orange": "fileColorOrange",
+      "Rose": "fileColorRose",
+      "Violet": "fileColorViolet",
+      "Yellow": "neutral850",
+      "Gray": "neutral850"
+    },
+
+    "Hyperlink": {
+      "linkColor": "accent400"
+    },
+
+    "Island": {
+      "borderColor": "neutral900"
+    },
+
+    "List": {
+      "Tag.foreground": "neutral500"
+    },
+
+    "MainToolbar": {
+      "background": "neutral850",
+      "borderColor": "neutral850",
+      "Icon.hoverBackground": "neutral700",
+      "Icon.pressedBackground": "neutral600",
+      "Dropdown.hoverBackground": "neutral700",
+      "Dropdown.pressedBackground": "neutral600",
+      "Dropdown.transparentHoverBackground": "neutral700"
+    },
+
+    "MainWindow": {
+      "background": "neutral850",
+      "Tab.background": "neutral950"
+    },
+
+    "MemoryIndicator": {
+      "usedBackground": "neutral700"
+    },
+
+    "Notification": {
+      "foreground": "neutral100",
+      "Button.foreground": "neutral100",
+      "MoreButton.foreground": "neutral400"
+    },
+
+    "ParameterInfo": {
+      "foreground": "neutral200"
+    },
+
+    "Popup": {
+      "Advertiser.foreground": "neutral500"
+    },
+
+    "PopupMenu": {
+      "translucentBackground": "neutral850"
+    },
+
+    "ProgressBar": {
+      "progressColor": "accent600",
+      "indeterminateStartColor": "accent800",
+      "indeterminateEndColor": "accent500",
+      "trackColor": "neutral700"
+    },
+
+    "RunWidget": {
+      "foreground": "neutral100",
+      "iconColor": "neutral300",
+      "runIconColor": "#4E9D6C",
+      "runningIconColor": "neutral50",
+      "runningBackground": "#386440",
+      "stopBackground": "#943B42",
+      "hoverBackground": "#00000019",
+      "pressedBackground": "#00000028"
+    },
+
+    "SearchEverywhere": {
+      "Advertiser.foreground": "neutral500"
+    },
+
+    "SearchMatch": {
+      "startBackground": "accent400",
+      "endBackground": "accent400"
+    },
+
+    "Settings.Spotlight.borderColor": "accent400",
+
+    "Spinner": {
+      "background": "InputBackground"
+    },
+
+    "StatusBar": {
+      "background": "neutral850",
+      "borderColor": "neutral850",
+      "Widget.foreground": "neutral300",
+      "Breadcrumbs.foreground": "neutral300",
+      "LightEditBackground": "accent950"
+    },
+
+    "TabbedPane": {
+      "disabledUnderlineColor": "neutral600"
+    },
+
+    "TitlePane": {
+      "background": "neutral850",
+      "Button.hoverBackground": "neutral700"
+    },
+
+    "ToggleButton": {
+      "onBackground": "accent600",
+      "onForeground": "neutral50",
+      "offBackground": "neutral700",
+      "offForeground": "neutral300",
+      "buttonColor": "neutral100",
+      "borderColor": "neutral600"
+    },
+
+    "ToolTip": {
+      "foreground": "neutral100"
+    },
+
+    "ToolWindow": {
+      "Button.hoverBackground": "neutral600",
+      "Button.selectedBackground": "accent800",
+      "Stripe.background": "neutral850",
+      "Button.foreground": "neutral400",
+      "Button.DragAndDrop.buttonDropBackground": "accent800",
+      "DragAndDrop.areaBackground": "accent950",
+      "HeaderTab.selectedBackground": "neutral800",
+      "HeaderTab.selectedInactiveBackground": "neutral800"
+    },
+
+    "VersionControl": {
+      "Log.Commit.currentBranchBackground": "accentTint",
+      "FileHistory.Commit.selectedBranchBackground": "accentTint"
+    },
+
+    "WelcomeScreen": {
+      "Projects.actions.selectionBorderColor": "accent600",
+      "Projects.actions.background": "neutral800"
+    },
+
+    "window": "PanelBackground"
+  },
+
+  "icons": {
+    "ColorPalette": {
+      "Checkbox.Background.Default": "neutral700",
+      "Checkbox.Background.Disabled": "neutral800",
+      "Checkbox.Background.Selected": "accent700",
+      "Checkbox.Border.Default": "neutral500",
+      "Checkbox.Border.Disabled": "neutral600",
+      "Checkbox.Border.Selected": "accent700",
+      "Checkbox.Focus.Wide": "neutral700",
+      "Checkbox.Foreground.Disabled": "neutral600",
+      "Checkbox.Foreground.Selected": "neutral50",
+      "Tree.iconColor.Dark": "neutral500"
+    }
+  }
+}

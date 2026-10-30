@@ -39,32 +39,72 @@ abstract class VerifyThemesTask : DefaultTask() {
     fun verify() {
         val resources = resourcesDirectory.get().asFile
         val hexColor = Regex("#[0-9A-Fa-f]{6}([0-9A-Fa-f]{2})?")
-        val identifier = Regex("[A-Za-z][A-Za-z0-9]*")
+        // Color names, including platform scale steps such as Gray0.25.
+        val identifier = Regex("[A-Za-z][A-Za-z0-9]*(\\.[0-9]+)?")
+        // Platform themes a plugin theme may extend.
+        val bundledThemes = setOf("Darcula", "IntelliJ", "ExperimentalDark", "ExperimentalLight", "Islands Dark", "Islands Light")
         val problems = mutableListOf<String>()
 
-        fun parseXml(file: File) {
-            try {
-                javax.xml.parsers.DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(file)
-            } catch (exception: Exception) {
-                problems += "${file.name}: invalid XML (${exception.message})"
-            }
+        fun parseXml(file: File): org.w3c.dom.Document? = try {
+            javax.xml.parsers.DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(file)
+        } catch (exception: Exception) {
+            problems += "${file.name}: invalid XML (${exception.message})"
+            null
         }
 
-        resources.resolve("colors").listFiles { file -> file.extension == "xml" }.orEmpty().forEach(::parseXml)
+        resources.resolve("colors").listFiles { file -> file.extension == "xml" }.orEmpty().forEach { parseXml(it) }
+
+        // Theme provider ids declared by this plugin, mapped to their theme files.
+        val providers = mutableMapOf<String, File>()
+        parseXml(resources.resolve("META-INF/plugin.xml"))?.getElementsByTagName("themeProvider")?.let { nodes ->
+            for (index in 0 until nodes.length) {
+                val element = nodes.item(index) as org.w3c.dom.Element
+                val id = element.getAttribute("id")
+                val file = resources.resolve(element.getAttribute("path").removePrefix("/"))
+                if (!file.isFile) problems += "plugin.xml: themeProvider '$id' points to missing file '${element.getAttribute("path")}'"
+                providers[id] = file
+            }
+        }
 
         val themeFiles = resources.resolve("themes").listFiles { file -> file.name.endsWith(".theme.json") }.orEmpty()
         if (themeFiles.isEmpty()) problems += "No *.theme.json files found"
 
-        for (themeFile in themeFiles) {
-            val theme = try {
+        val themes = themeFiles.associateWith { themeFile ->
+            try {
                 groovy.json.JsonSlurper().parse(themeFile) as Map<*, *>
             } catch (exception: Exception) {
                 problems += "${themeFile.name}: invalid JSON (${exception.message})"
-                continue
+                null
             }
+        }
 
-            val colors = theme["colors"] as? Map<*, *> ?: emptyMap<Any, Any>()
-            for ((name, value) in colors) {
+        for ((themeFile, theme) in themes) {
+            if (theme == null) continue
+            val ownColors = theme["colors"] as? Map<*, *> ?: emptyMap<Any, Any>()
+
+            // A theme extending another theme in this plugin inherits its colors and may only override existing ones.
+            val parentId = theme["parentTheme"] as? String
+            val parentTheme = providers[parentId]?.let { themes[it] }
+            val parentColors = when {
+                parentId == null || parentId in bundledThemes -> emptyMap<Any, Any>()
+                parentId in providers -> parentTheme?.get("colors") as? Map<*, *> ?: emptyMap<Any, Any>()
+                else -> {
+                    problems += "${themeFile.name}: parentTheme '$parentId' is neither a bundled theme nor a themeProvider in plugin.xml"
+                    emptyMap<Any, Any>()
+                }
+            }
+            if (parentId in providers) {
+                if (parentTheme == null) {
+                    problems += "${themeFile.name}: parent theme '$parentId' could not be loaded"
+                } else {
+                    for (name in ownColors.keys - parentColors.keys) {
+                        problems += "${themeFile.name}: colors.$name overrides a color that parent '$parentId' does not define"
+                    }
+                }
+            }
+            val colors = parentColors + ownColors
+
+            for ((name, value) in ownColors) {
                 if (value !is String || !(hexColor.matches(value) || value in colors.keys)) {
                     problems += "${themeFile.name}: colors.$name has invalid value '$value'"
                 }
@@ -96,7 +136,7 @@ abstract class VerifyThemesTask : DefaultTask() {
 
 val verifyThemes = tasks.register<VerifyThemesTask>("verifyThemes") {
     group = "verification"
-    description = "Checks that theme JSON and color scheme XML files parse and that every color reference resolves."
+    description = "Checks that theme JSON and color scheme XML files parse and that every color reference resolves, including colors inherited from parent themes in this plugin."
     resourcesDirectory = layout.projectDirectory.dir("src/main/resources")
 }
 
