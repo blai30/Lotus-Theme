@@ -10,7 +10,7 @@
   <a href="https://plugins.jetbrains.com/plugin/14369-lotus-theme"><img src="https://img.shields.io/jetbrains/plugin/v/14369-lotus-theme" alt="Version"></a>
   <a href="https://plugins.jetbrains.com/plugin/14369-lotus-theme"><img src="https://img.shields.io/jetbrains/plugin/d/14369-lotus-theme" alt="Downloads"></a>
   <a href="https://plugins.jetbrains.com/plugin/14369-lotus-theme/reviews"><img src="https://img.shields.io/jetbrains/plugin/r/rating/14369-lotus-theme" alt="Rating"></a>
-  <a href="https://github.com/blai30/Lotus-Theme/actions/workflows/build.yml"><img src="https://github.com/blai30/Lotus-Theme/actions/workflows/build.yml/badge.svg" alt="Build"></a>
+  <a href="https://github.com/blai30/lotus-theme-jetbrains/actions/workflows/build.yml"><img src="https://github.com/blai30/lotus-theme-jetbrains/actions/workflows/build.yml/badge.svg" alt="Build"></a>
 </div>
 
 ## Themes

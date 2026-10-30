@@ -1,6 +1,6 @@
 import org.jetbrains.intellij.platform.gradle.extensions.intellijPlatform
 
-rootProject.name = "Lotus-Theme"
+rootProject.name = "lotus-theme-jetbrains"
 
 pluginManagement {
     plugins {
